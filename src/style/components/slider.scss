@@ -1,0 +1,53 @@
+.owl-carousel {
+  .card-wrap {
+    .heading {
+      letter-spacing: 0.2rem;
+    }
+  }
+  .item {
+    padding: 0 10px;
+  }
+
+  .icon-wrap {
+    margin-bottom: 1.25rem;
+    max-width: 20.375rem;
+
+    img {
+      display: inline-block;
+      width: 4.3125rem;
+      height: 4.5625rem;
+    }
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  .owel-arrow {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    border: none;
+    box-shadow: 13px 23px 81px rgba(0, 15, 26, 0.31);
+
+    svg {
+      margin: auto;
+    }
+  }
+
+  .owl-prev {
+
+  }
+
+  .owl-next {
+
+  }
+}

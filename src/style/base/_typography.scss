@@ -4,7 +4,7 @@
 
 .heading {
   text-transform: uppercase;
-  font-family: "Myriad Pro";
+  font-family: "MyriadPro";
   font-weight: 700;
   &_xl {
     font-size: 2.875rem;
@@ -32,5 +32,11 @@
   }
   &_left {
     text-align: left;
+  }
+  &_md {
+    font-size: 1.25rem;
+  }
+  &_sm {
+    font-size: 1.0625rem;
   }
 }

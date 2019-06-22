@@ -1,1 +1,21 @@
 
+.footer {
+  background: rgba(235, 235, 235, .4);
+  padding: 2.5rem 0;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .phone {
+    flex-grow: 1;
+    text-align: right;
+    color: $primary-color;
+    font-weight: 700;
+    transition: .35s;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

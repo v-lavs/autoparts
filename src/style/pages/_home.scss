@@ -28,28 +28,142 @@
 }
 
 .section-suppliers {
-  padding-top: 10.625rem;
-  padding-bottom: 8.75rem;
+  padding-top: 4.375rem;
+  padding-bottom: 4.375rem;
 
   .suppliers-list {
-    margin: 0 -15px;
+    margin: 0 -15px 4.375rem;
+
     &__item {
       padding: 15px;
-      min-height: 130px;
     }
+
     &__link {
-      display: block;
+      flex-grow: 1;
     }
   }
+
   .supplier-logo {
     display: flex;
-    padding-bottom: 25px;
+    background: linear-gradient(to bottom, #fff 30%, #f3f3f3 25%);
+    padding-bottom: 1.5625rem;
+    height: 6.25rem;
+    margin-bottom: 0.9375rem;
+
     &__img {
       display: block;
       margin: auto;
+      width: auto;
+      height: 100%;
     }
+  }
+
+  .wrap-text {
+    padding-top: 0.9375rem;
   }
 }
 
+.section-advantages {
+  padding-top: 4.375rem;
+  padding-bottom: 4.375rem;
 
+  .container {
+    position: relative;
+  }
 
+  .section__title {
+    margin-bottom: 2.8125rem;
+  }
+
+  .owl-carousel {
+    margin-bottom: 1.875rem;
+  }
+
+  .heading {
+    margin-bottom: 1.25rem;
+  }
+}
+
+.section-about {
+  display: flex;
+  min-height: 24.25rem;
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+
+  .link:hover,
+  .link:focus {
+    .heading {
+      color: $primary-color;
+    }
+    .card {
+      border-top: 2px solid $warning-color;
+      border-left: 2px solid $warning-color;
+      border-right: 2px solid $warning-color;
+      transition: .35s;
+      &:before,
+      &:after {
+        transition: background-color .35s;
+        background-color: $warning-color;
+      }
+      .hide-img {
+        opacity: 1;
+        transition: opacity .35s;
+      }
+    }
+  }
+
+  .heading {
+    color: $dirty;
+    letter-spacing: 0.2rem;
+  }
+
+  .card {
+    display: flex;
+   padding: 2.1875rem 3.375rem;
+    border-top: 2px solid $light;
+    border-left: 2px solid $light;
+    border-right: 2px solid $light;
+
+    &:before {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 20.5rem;
+      background-color: $light;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      bottom: 0;
+      z-index: 1;
+      background-color: $light;
+    }
+
+    &:before {
+      width: 20.5rem;
+      left: 0.9375rem;
+
+    }
+
+    &:after {
+      width: 4.375rem;
+      right: 0.9375rem;
+    }
+  }
+
+  .text_md {
+    max-width: 16.25rem;
+  }
+
+  .wrap-img {
+    position: relative;
+    margin-left: 2.5rem;
+    margin-bottom: -3rem;
+  }
+}
