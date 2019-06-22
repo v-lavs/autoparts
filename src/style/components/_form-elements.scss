@@ -1,0 +1,28 @@
+.btn {
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 1.1875rem;
+  display: inline-flex;
+  text-transform: uppercase;
+  padding: 0.5rem 1.9rem;
+  align-items: center;
+  &_warn {
+    background-color:$warning-color;
+    color: $primary-color;
+  }
+}
+
+.input {
+  background-color: #ffffff;
+  display: block;
+  width: 100%;
+  appearance: none;
+  padding: 0.625rem 2rem 0.5rem;
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+}

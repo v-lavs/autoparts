@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Автозапчасти</title>
+    <!--fonts-->
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <!--styles-->
+    <link rel="stylesheet" href="build/main.css">
+</head>
+
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <button class="burger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+
+                <a href="/" class="logo">
+                    <img src="assets/img/autoparts.svg" alt="Автозапчасти" class="logo__img">
+                </a>
+
+                <nav class="main-nav">
+                    <button class="close-nav"></button>
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item main-nav__item_active">
+                            <a href="#" class="main-nav__link">Каталог</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__link">О компании</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__link">Оплата и доставка</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__link">контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="tel:8(351)256-34-66" class="phone">8 (351) 256-34-66</a>
+                <div class="backdrop"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section page-banner text_center" style="background-image: url(assets/img/banner.png)">
+        <div class="container">
+            <h1 class="section-banner__heading heading heading_xl">
+                <small class="d-block">АВТОЗАПЧАСТИ</small>
+                для ГРУЗОВЫХ АВТОМОБИЛЕЙ
+            </h1>
+        </div>
+    </section>
+
+    <div class="search-bar">
+        <div class="container">
+            <form action="/" method="get" class="search-bar__form">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h4 class="heading heading_md">ПОИСК автозапчасти</h4>
+                    </div>
+                    <div class="col">
+                        <input type="text" name="title" class="input" placeholder="Название, артикул">
+                    </div>
+                    <div class="col">
+                        <input type="text" name="brand" class="input" placeholder="Бренд">
+                    </div>
+                    <div class="col flex-grow-0">
+                        <button type="submit" class="btn btn_warn btn_search">найти
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="26" height="28"
+                                 viewBox="0 0 26 28"
+                                 class="icon icon-search">
+                                <title>search</title>
+                                <path d="M18 13c0-3.859-3.141-7-7-7s-7 3.141-7 7 3.141 7 7 7 7-3.141 7-7zM26 26c0 1.094-0.906 2-2 2-0.531 0-1.047-0.219-1.406-0.594l-5.359-5.344c-1.828 1.266-4.016 1.937-6.234 1.937-6.078 0-11-4.922-11-11s4.922-11 11-11 11 4.922 11 11c0 2.219-0.672 4.406-1.937 6.234l5.359 5.359c0.359 0.359 0.578 0.875 0.578 1.406z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+
+
+    </div>
+
+    <section class="section section-suppliers">
+        <div class="container">
+            <ul class="suppliers-list row">
+                <li class="suppliers-list__item col-lg-3">
+                    <a href="#" class="suppliers-list__link">
+                        <div class="supplier-logo">
+                            <img src="assets/img/maz.png" alt="minsky automobile plant" class="supplier-logo__img">
+                        </div>
+                        <h6 class="heading text_center text_md">МАЗ</h6>
+                    </a>
+                </li>
+                <li class="suppliers-list__item col-lg-3">
+                    <a href="#" class="suppliers-list__link">
+                        <div class="supplier-logo">
+                            <img src="assets/img/logo-kamaz.png" alt="KAMAZ" class="supplier-logo__img">
+                        </div>
+                        <h6 class="heading text_center text_md">КАМАЗ</h6>
+                    </a>
+                </li>
+                <li class="suppliers-list__item col-lg-3">
+                    <a href="#" class="suppliers-list__link">
+                        <div class="supplier-logo">
+                            <img src="assets/img/maz.png" alt="minsky automobile plant" class="supplier-logo__img">
+                        </div>
+                        <h6 class="heading text_center text_md">МАЗ</h6>
+                    </a>
+                </li>
+                <li class="suppliers-list__item col-lg-3">
+                    <a href="#" class="suppliers-list__link">
+                        <div class="supplier-logo">
+                            <img src="assets/img/logo-kamaz.png" alt="KAMAZ" class="supplier-logo__img">
+                        </div>
+                        <h6 class="heading text_center text_md">КАМАЗ</h6>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section section-advantages">
+        <div class="container">
+            <h2 class="section__title heading heading_lg text_center">ПОЧЕМУ С НАМИ ВЫГОДНО?</h2>
+
+            <div class="row owl-carousel owl-theme">
+                <div class="item col-lg-4">
+                    <div class="card-wrap text_center">
+                        <div class="icon-wrap">
+                            <img height="73" width="69" src="assets/img/icons/clock.svg" alt="">
+                        </div>
+                        <h3 class="heading heading_sm">отсрочка платежа</h3>
+                        <div>
+                            <p>Получите заказ и оплачивайте его
+                                в течение 30 дней</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item col-lg-4">
+                    <div class="card-wrap text_center">
+                        <div class="icon-wrap">
+                            <img height="73" width="69" src="assets/img/icons/clock.svg" alt="">
+                        </div>
+                        <h3 class="heading heading_sm">Работаем с НДС и без</h3>
+                        <div>
+                            <p>Можем провести сделку с НДС, так и без него</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item col-lg-4">
+                    <div class="card-wrap text_center">
+                        <div class="icon-wrap">
+                            <img height="73" width="69" src="assets/img/icons/clock.svg" alt="">
+                        </div>
+                        <h3 class="heading heading_sm">Скидки от 50 000 рублей</h3>
+                        <div>
+                            <p>При объемах от 50 000 рублей мы даем персональные скидки</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-about">
+        <a href="#" class="link">
+            <div class="card card-about">
+                <h3 class="card__title card__title--about">УСЛОВИЯ ОПЛАТЫ И ДОСТАВКИ</h3>
+                <p class="card__text card__text--about">Смотрите варианты доставки</p>
+            </div>
+        </a>
+
+        <a href="#" class="link">
+            <div class="card card-about">
+                <h3 class="card__title card__title--about">О КОМПАНИИ</h3>
+                <p class="card__text card__text--about">Почитайте информацию о нашей компании</p>
+            </div>
+        </a>
+
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <nav class="site__menu">
+                <ul class="nav">
+                    <li class="main-nav__item">
+                        <a class="main-nav__link active">Каталог</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link">О компании</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link">Оплата и доставка</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link">контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="tel:8 (351) 256-34-66" class="phone">8 (351) 256-34-66</a>
+        </div>
+    </footer>
+</div>
+
+<script src="build/main.js"></script>
+</body>
+</html>

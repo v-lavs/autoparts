@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Оплата и доставка</title>
+    <link rel="stylesheet" href="build/main.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <button class="burger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+
+        <a href="/" class="logo">
+            <img src="assets/img/autoparts.svg" alt="Автозапчасти" class="logo__img">
+        </a>
+
+        <nav class="header__menu">
+            <button class="close-nav"></button>
+            <ul class="nav">
+                <li class="nav__item">
+                    <a class="nav__link active">Каталог</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link">О компании</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link">Оплата и доставка</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link">контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="tel:8 (351) 256-34-66" class="phone">8 (351) 256-34-66</a>
+
+        <div class="search-bar">
+            <form action="/" method="get" class="search-bar__form">
+                <div class="input-group">
+                    <fieldset>
+                        <legend>ПОИСК автозапчасти</legend>
+                        <input type="text" name="title" class="search-bar__form_control"
+                               placeholder="Название, артикул">
+                        <input type="text" name="brand" class="search-bar__form_control" placeholder="Бренд">
+                        <button type="submit" class="input-group-addon search-btn">найти
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="26" height="28"
+                                 viewBox="0 0 26 28" class="icon icon-search">
+                                <title>search</title>
+                                <path d="M18 13c0-3.859-3.141-7-7-7s-7 3.141-7 7 3.141 7 7 7 7-3.141 7-7zM26 26c0 1.094-0.906 2-2 2-0.531 0-1.047-0.219-1.406-0.594l-5.359-5.344c-1.828 1.266-4.016 1.937-6.234 1.937-6.078 0-11-4.922-11-11s4.922-11 11-11 11 4.922 11 11c0 2.219-0.672 4.406-1.937 6.234l5.359 5.359c0.359 0.359 0.578 0.875 0.578 1.406z"></path>
+                            </svg>
+                        </button>
+                    </fieldset>
+                </div>
+            </form>
+
+        </div>
+        <div class="backdrop"></div>
+    </header>
+
+    <section class="section section-conditions">
+        <div class="container">
+            <h1 class="title-page">Условия оплаты и доставки</h1>
+            <div class="conditions-card conditions-card--delivery">
+                <h2 class="conditions-card__title">Доставка</h2>
+                <ul class="conditions-card__list">
+                    <li class="conditions-card__list_item">Отгрузка ж/д контейнерами, автотранспортом по всей территории
+                        РФ и
+                        странам СНГ.
+                    </li>
+                    <li class="conditions-card__list_item">Компания имеет возможность поставлять запасные части крупными
+                        и мелкими партиями.
+                    </li>
+                    <li class="conditions-card__list_item">Весь ассортимент товара представлен в торговом зале и всегда
+                        в наличии
+                        на складах в г. Челябинск и г. Екатеринбург. Поставка товара осуществляется в короткие сроки
+                        после
+                        формирования заявки.
+                    </li>
+                    <li class="conditions-card__list_item">Любая форма оплаты, отсрочка платежа до 30 дней.
+                    </li>
+                    <li class="conditions-card__list_item">Особое внимание уделено заключению долгосрочных договоров на
+                        поставку
+                        запасных частей к автомобилям, по которым действует гибкая система скидок.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="conditions-card conditions-card--payment">
+                <h2 class="conditions-card__title">Оплата</h2>
+                <ul class="conditions-card__list">
+                    <li class="conditions-card__list_item">
+                        Оплата банковской картой Visa, MasterCard, МИР.
+                    </li>
+                    <li class="conditions-card__list_item">
+                        Наличными в офисе УралАвтоДом.
+                    </li>
+                    <li class="conditions-card__list_item">
+                        Безналичный расчет (для юридических лиц и предприятий).
+                    </li>
+                    <li class="conditions-card__list_item">
+                        Наличными курьеру. Вы можете оплатить заказ курьеру в рублях непосредственно в момент доставки.
+                    </li>
+                    <li class="conditions-card__list_item">
+                        Курьерская доставка осуществляется по Челябинску на следующий день после принятия заказа.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h3 class="title">ОПЛАТА ЗАКАЗА ПРИ ПОЛУЧЕНИИ ВОЗМОЖНА:</h3>
+        <p><span class="text--bold">Для жителей других регионов </span>при одновременном выполнении следующих условий:
+        </p>
+        <ul class="payment-list">
+            <li class="payment-list__item">
+                доставка ТК СДЭК или Почтой России наложенным платежом;
+            </li>
+
+            <li class="payment-list__item">
+                сумма заказа не превышает 5 000 руб.;
+            </li>
+
+            <li class="payment-list__item">
+                в заказе нет негабаритных деталей, которые не принимаются компанией перевозчиком к пересылке;
+            </li>
+
+            <li class="payment-list__item">
+                в заказе нет деталей со сроком поставки более 2 дней (48 часов);
+            </li>
+        </ul>
+        <p class="text--bold">Во всех остальных случаях необходима 100% предоплата заказа.</p>
+    </section>
+
+    <section class="section section-advantages">
+        <div class="container">
+            <h2 class="section__title">ПОЧЕМУ С НАМИ ВЫГОДНО?</h2>
+            <div class="owl-carousel advantages-slider">
+                <div class="card-advantages">
+                    <div class="icon-box"></div>
+                    <h3 class="card-advantages__title">отсрочка платежа</h3>
+                    <p class="card-advantages__text">Получите заказ и оплачивайте его
+                        в течение 30 дней</p>
+                </div>
+
+                <div class="card-advantages">
+                    <div class="icon-box"></div>
+                    <h3 class="card-advantages__title">Работаем с НДС и без</h3>
+                    <p class="card-advantages__text">Можем провести сделку с НДС,
+                        так и без него</p>
+                </div>
+
+                <div class="card-advantages">
+                    <div class="icon-box"></div>
+                    <h3 class="card-advantages__title">Скидки от 50 000 рублей</h3>
+                    <p class="card-advantages__text">При объемах от 50 000 рублей мы даем персональные скидки</p>
+                </div>
+
+                <div class="card-advantages">
+                    <div class="icon-box"></div>
+                    <h3 class="card-advantages__title">Работаем с НДС и без</h3>
+                    <p class="card-advantages__text">Можем провести сделку с НДС,
+                        так и без него</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <nav class="site__menu">
+                <ul class="nav">
+                    <li class="nav__item">
+                        <a class="nav__link active">Каталог</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link">О компании</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link">Оплата и доставка</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link">контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="tel:8 (351) 256-34-66" class="phone">8 (351) 256-34-66</a>
+        </div>
+    </footer>
+</div>
+<script src="build/main.js"></script>
+</body>
+</html>

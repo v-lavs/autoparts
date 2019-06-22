@@ -1,0 +1,36 @@
+/**
+*TEXT UTILITIES
+*/
+
+.heading {
+  text-transform: uppercase;
+  font-family: "Myriad Pro";
+  font-weight: 700;
+  &_xl {
+    font-size: 2.875rem;
+    small {
+      font-size: 67.4%;
+    }
+  }
+  &_lg {
+    font-size: 1.875rem;
+  }
+  &_md {
+    font-size: 1.375rem;
+  }
+  &-sm {
+    font-size: 1.0625rem;
+  }
+}
+
+.text {
+  &_right {
+    text-align: right;
+  }
+  &_center {
+    text-align: center;
+  }
+  &_left {
+    text-align: left;
+  }
+}

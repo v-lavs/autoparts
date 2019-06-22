@@ -1,0 +1,27 @@
+.section-video {
+    & > .container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .video {
+        display: block;
+        width: 100%;
+        height: 180px;
+    }
+}
+
+@include respond-to($md) {
+    .section-video {
+        .video {
+            height: 320px;
+        }
+    }
+}
+
+@include respond-to($lg) {
+    .section-video {
+        .video {
+            height: 400px;
+        }
+    }
+}

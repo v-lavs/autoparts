@@ -1,0 +1,25 @@
+/*
+* Fonts
+*/
+$primary-fonts: 'MyriadPro', sans-serif;
+
+/*
+* Colors
+*/
+
+$primary-color: #252d75;
+$warning-color: #ffc400;
+$light-gray: #f3f3f3;
+$dirty: #b6b6b6;
+$gray: #6c6c6c;
+
+
+/*
+* Breakpoints
+*/
+
+$xs: '(max-width: 576px)';
+$sm: '(max-width: 767px)';
+$md: '(max-width: 991px)';
+$lg: '(max-width: 1199px)';
+$xl: '(min-width: 1200px)';

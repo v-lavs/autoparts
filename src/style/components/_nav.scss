@@ -1,0 +1,50 @@
+.main-nav {
+  display: flex;
+  flex-grow: 1;
+  padding: 0 2rem;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__item {
+    position: relative;
+    padding: 0 1rem 0 2.8rem;
+
+    &:hover,
+    &:focus,
+    &_active {
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        background-color: $warning-color;
+        transform: translateY(-50%);
+        z-index: 1;
+      }
+
+      &:before {
+        left: 0;
+        width: 2rem;
+        height: 2px;
+      }
+
+      &:after {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        overflow: hidden;
+        right: 0;
+      }
+    }
+  }
+
+  &__link {
+    text-transform: uppercase;
+    color: $primary-color;
+    letter-spacing: 0.46px;
+  }
+}

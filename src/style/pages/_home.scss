@@ -1,0 +1,55 @@
+.page-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $warning-color;
+  min-height: 22.9375rem;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #000000;
+    opacity: .3;
+    z-index: 1;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.section-suppliers {
+  padding-top: 10.625rem;
+  padding-bottom: 8.75rem;
+
+  .suppliers-list {
+    margin: 0 -15px;
+    &__item {
+      padding: 15px;
+      min-height: 130px;
+    }
+    &__link {
+      display: block;
+    }
+  }
+  .supplier-logo {
+    display: flex;
+    padding-bottom: 25px;
+    &__img {
+      display: block;
+      margin: auto;
+    }
+  }
+}
+
+
+
