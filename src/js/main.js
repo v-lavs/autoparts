@@ -101,4 +101,22 @@ $(document).ready(function () {
     $(".owl-prev").click(function () {
         owl.trigger('owl.prev');
     })
+
+    /*
+     * NUMBER INPUT HANDLER
+     */
+
+    $('.number-input__control').click(function(e) {
+        e.preventDefault();
+        var input = $(this).parent().find('.number-input__field');
+        console.log(input)
+        var inputValue = input.val();
+        if ($(this).hasClass('number-input__control_plus')) {
+            input.val(++inputValue);
+        } else if (inputValue <= 0) {
+            input.val(0)
+        } else {
+            input.val(--inputValue);
+        }
+    });
 });
