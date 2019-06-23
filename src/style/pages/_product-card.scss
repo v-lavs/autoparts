@@ -1,0 +1,36 @@
+.product-card {
+  .product-card__link{
+    &:first-of-type {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__table {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  &__row {
+    display: table-row;
+  }
+  &__cell {
+    display: table-cell;
+    padding-bottom: 10px;
+    &_title {
+      width: 40%;
+      font-weight: 700;
+    }
+  }
+  .btn {
+    font-size: 0.75rem;
+  }
+  .number-input {
+    margin-right: 15px;
+  }
+}
