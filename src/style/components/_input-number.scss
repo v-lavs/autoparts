@@ -1,0 +1,35 @@
+
+.number-input {
+  position: relative;
+  width: 90px;
+  display: flex;
+  &__field {
+    width: 100%;
+    display: block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #ddd;
+    padding: 5px 5px 5px 10px;
+  }
+  &__control {
+    position: absolute;
+    width: 20px;
+    height: 50%;
+    right: 0;
+    left: auto;
+    z-index: 1;
+
+    padding: 0 3px;
+    line-height: 1;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    &_plus {
+      top: 0;
+      border-bottom: none;
+    }
+    &_minus {
+      bottom:0;
+    }
+  }
+}
