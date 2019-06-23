@@ -10,7 +10,7 @@
     <!--styles-->
     <link rel="stylesheet" href="build/main.css">
 </head>
-<body>
+<body class="page-contacts">
 <div class="wrapper">
     <header class="header">
         <div class="container">
@@ -83,14 +83,40 @@
     </div>
 
     <main>
-<div class="container">
-    <h1 class="title-page heading heading_lg text_center">контакты</h1>
-    <ul class="contact-list">
-        <li class="contact-list__item">
+        <section class="section section-contacts">
+            <div class="container">
+                <h1 class="title-page-contacts heading heading_lg text_center">контакты</h1>
+                <ul class="contact-list row">
+                    <li class="contact-list__item col-lg-4">
+                        <div class="card-contact">
+                            <p class="text_contacts map">Челябинск,</p>
+                            <p class="text_contacts fly">Павелцкая 2-ая, 28</p>
+                        </div>
+                    </li>
 
-        </li>
-    </ul>
-</div>
+                    <li class="contact-list__item col-lg-4">
+                        <div class="card-contact">
+                            <a href="mailto:info@eco-chel74.ru" class="contact-list__link text_contacts mail">info@eco-chel74.ru</a>
+                            <p class="text_contacts clock">пн -вс 09:00-20:00</p>
+                        </div>
+                    </li>
+
+                    <li class="contact-list__item col-lg-4">
+                        <div class="card-contact">
+                            <a href="tel:8 (351) 756-35-56" class="contact-list__link text_contacts mobile">8 (351)
+                                756-35 -56</a>
+                            <a href="tel:8 (351) 750-04-79" class="contact-list__link text_contacts">8 (351)
+                                750-04-79</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class=".section-location">
+            <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143494.86491623629!2d38.8346975935457!3d55.80873818252006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414b1c7e8e89e903%3A0x2489581359276ac7!2z0J7RgNC10YXQvtCy0L4t0JfRg9C10LLQviwg0JzQvtGB0LrQvtCy0YHQutCw0Y8g0L7QsdC7Lg!5e0!3m2!1sru!2sru!4v1452761646368" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="container">

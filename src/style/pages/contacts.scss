@@ -1,0 +1,114 @@
+.section-contacts {
+  padding-top: 4.125rem;
+  padding-bottom: 8.75rem;
+}
+
+.title-page-contacts {
+  margin-bottom: 2.5rem;
+}
+
+.contact-list {
+  margin: 0 -23px;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+
+  &__item {
+    padding: 0 23px;
+  }
+
+  &__link {
+    display: inline-block;
+  }
+
+  .card-contact {
+    position: relative;
+    padding: 2.3125rem 3.3125rem 2.0625rem;
+    border-top: 2px solid $light;
+    border-bottom: 2px solid $light;
+    border-right: 2px solid $light;
+    color: $primary-color;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      height: 20%;
+      width: 2px;
+      left: 0;
+      z-index: 1;
+      background-color: $light;
+    }
+
+    &:before {
+      top: 0;
+    }
+
+    &:after {
+      bottom: 0;
+    }
+  }
+
+  .text_md {
+    max-width: 16.25rem;
+  }
+
+  .text_contacts {
+    position: relative;
+    margin-bottom: 12px;
+
+    &:before {
+      position: absolute;
+      content: '';
+      width: 34px;
+      height: 35px;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      display: inline-block;
+      z-index: 1;
+      left: -70px;
+
+
+    }
+
+     .map:before {
+        background-image: url(../assets/img/icons/map2.svg);
+      }
+
+
+    .mail {
+      background-image: url(../assets/img/icons/mail-envelope-closed.svg);
+    }
+
+    .fly {
+      background-image: url(../assets/img/icons/paperplane.svg);
+    }
+
+    .mobile {
+      background-image: url(../assets/img/icons/mobile.svg);
+    }
+
+    .clock {
+      background-image: url(../assets/img/icons/time.svg);
+    }
+  }
+
+  .section-location {
+    .map-responsive {
+      overflow: hidden;
+      padding-bottom: 29.25%;
+      position: relative;
+      height: 0;
+    }
+
+    .map-responsive iframe {
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+  }
+}
