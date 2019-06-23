@@ -1,8 +1,10 @@
 .pagination {
   display: flex;
   width: 100%;
+  padding-top: 12px 25px;
   &__item {
     flex-grow: 1;
+    min-height: 1px;
   }
   &__scale {
     flex-grow: 2;

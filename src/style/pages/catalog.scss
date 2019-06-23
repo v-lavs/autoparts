@@ -1,0 +1,23 @@
+.catalog-table {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  font-size: 0.8125rem;
+  &__header {
+    display: table-row;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #f3f3f3;
+  }
+  &__row {
+    display: table-row;
+  }
+  &__cell {
+    display: table-cell;
+    padding: 12px 25px;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  .btn {
+    font-size: inherit;
+  }
+}

@@ -49,6 +49,9 @@
   &_uppercase {
     text-transform: uppercase;
   }
+  &_primary {
+    color: $primary-color;
+  }
 }
 
 @include respond-to($sm) {
