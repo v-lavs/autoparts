@@ -1,19 +1,40 @@
 html {
-    font: 400 16px/1.25 $primary-fonts;
+  font: 400 16px/1.25 $primary-fonts;
 }
 
 .wrapper {
-    padding-top: 5.9375rem;
+  padding-top: 5.9375rem;
 }
 
 .icon {
-    fill: $primary-color;
+  fill: $primary-color;
 }
 
 // @TODO RENAME THIS CLASS
 .bg-bottom {
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    min-height: 30.375rem;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 30.375rem;
+}
+
+.link {
+  display: inline-block;
+  -webkit-transition: .35s;
+  transition: .35s;
+  &_default {
+    color: #d5d5d5;
+    &:hover,
+    &:focus {
+      color: #303c84;
+      text-decoration: underline;
+    }
+  }
+}
+
+.block {
+  padding: 25px 20px;
+  &_border {
+    border: 2px solid #ededed;
+  }
 }
