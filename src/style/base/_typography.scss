@@ -45,6 +45,9 @@
   &_sm {
     font-size: 1.0625rem;
   }
+  &_uppercase {
+    text-transform: uppercase;
+  }
 }
 
 @include respond-to($sm) {

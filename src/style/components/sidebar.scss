@@ -1,0 +1,22 @@
+.sidebar {
+  font-size: 0.875rem;
+  &__section {
+    border-bottom: 2px solid #d4d5e0;
+    padding: 0 0 15px;
+    margin-bottom: 20px;
+  }
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  li {
+    padding-left: 1.85rem;
+    line-height: 1.25;
+    margin-bottom: 15px;
+    &:before {
+      top: 1px;
+    }
+  }
+}

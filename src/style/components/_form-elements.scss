@@ -6,11 +6,23 @@
   font-size: 1.1875rem;
   display: inline-flex;
   text-transform: uppercase;
-  padding: 0.5rem 1.9rem;
+  padding: 0.5rem 1.75rem;
   align-items: center;
+
+  -webkit-transition: .35s;
+  -moz-transition: .35s;
+  -ms-transition: .35s;
+  -o-transition: .35s;
+  transition: .35s;
   &_warn {
     background-color:$warning-color;
     color: $primary-color;
+    border: 2px solid $warning-color;
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: $warning-color;
+    }
   }
 }
 
