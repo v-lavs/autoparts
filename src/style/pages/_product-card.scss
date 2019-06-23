@@ -1,6 +1,10 @@
-.product-card {
-  margin-bottom: 130px;
+.product-page {
+  .footer {
+    margin-top: 130px;
+  }
+}
 
+.product-card {
   .product-card__link{
     &:first-of-type {
       margin-bottom: 15px;

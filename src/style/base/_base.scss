@@ -45,6 +45,16 @@ html {
   }
 }
 
+.phone-link {
+  font-size: 1.5rem;
+  color: $primary-color;
+  font-weight: 700;
+  transition: .35s;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .block {
   padding: 25px 20px;
   &_border {
