@@ -1,0 +1,114 @@
+.section-about {
+  display: flex;
+  min-height: 24.25rem;
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+
+  .link:hover,
+  .link:focus {
+    .heading {
+      color: $primary-color;
+    }
+    .card {
+      border-top: 2px solid $warning-color;
+      border-left: 2px solid $warning-color;
+      border-right: 2px solid $warning-color;
+      transition: .35s;
+      &:before,
+      &:after {
+        transition: background-color .35s;
+        background-color: $warning-color;
+      }
+      .hide-img {
+        opacity: 1;
+        transition: opacity .35s;
+      }
+    }
+  }
+
+  .heading {
+    color: $dirty;
+    letter-spacing: 0.2rem;
+  }
+
+  .card {
+    display: flex;
+    padding: 2.1875rem 3.375rem;
+    border-top: 2px solid $light;
+    border-left: 2px solid $light;
+    border-right: 2px solid $light;
+
+    &:before {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 20.5rem;
+      background-color: $light;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      bottom: 0;
+      z-index: 1;
+      background-color: $light;
+    }
+
+    &:before {
+      width: 58%;
+      left: 0.9375rem;
+
+    }
+
+    &:after {
+      width: 14%;
+      right: 0.9375rem;
+    }
+  }
+
+  .text_md {
+    max-width: 16.25rem;
+  }
+
+  .wrap-img {
+    max-width: 6.25rem;
+    height: 6.25rem;
+    position: relative;
+    margin-left: 2.5rem;
+    margin-bottom: -3rem;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  @include respond-to($md){
+    .link {
+      margin-bottom: 1.875rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  @include respond-to($xs){
+    .wrap-img {
+      max-width: 66px;
+      height: 50px;
+      align-self: flex-end;
+      margin-bottom: -13px;
+    }
+    .card {
+      padding: 1.1875rem 2.375rem;
+    }
+  }
+  @include respond-to($xs){
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+}

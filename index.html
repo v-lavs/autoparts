@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Автозапчасти</title>
     <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fonts/fonts.css">
     <!--styles-->
     <link rel="stylesheet" href="build/main.css">
@@ -15,12 +16,6 @@
     <header class="header">
         <div class="container">
             <div class="navbar">
-                <button class="burger">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                </button>
-
                 <a href="/" class="logo">
                     <img src="assets/img/autoparts.svg" alt="Автозапчасти" class="logo__img">
                 </a>
@@ -28,21 +23,26 @@
                 <nav class="main-nav">
                     <button class="close-nav"></button>
                     <ul class="main-nav__list">
-                        <li class="main-nav__item main-nav__item_active">
+                        <li class="main-nav__item decor_active  decor">
                             <a href="#" class="main-nav__link">Каталог</a>
                         </li>
-                        <li class="main-nav__item">
+                        <li class="main-nav__item decor">
                             <a href="#" class="main-nav__link">О компании</a>
                         </li>
-                        <li class="main-nav__item">
+                        <li class="main-nav__item decor">
                             <a href="#" class="main-nav__link">Оплата и доставка</a>
                         </li>
-                        <li class="main-nav__item">
+                        <li class="main-nav__item decor">
                             <a href="#" class="main-nav__link">контакты</a>
                         </li>
                     </ul>
                 </nav>
                 <a href="tel:8(351)256-34-66" class="phone">8 (351) 256-34-66</a>
+                <button class="burger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
                 <div class="backdrop"></div>
             </div>
         </div>
@@ -61,16 +61,16 @@
         <div class="container">
             <form action="/" method="get" class="search-bar__form">
                 <div class="row align-items-center">
-                    <div class="col">
+                    <div class="col-lg-3 col-md-3 col-sm-12">
                         <h4 class="heading heading_md">ПОИСК автозапчасти</h4>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-4 col-md-3 col-sm-12">
                         <input type="text" name="title" class="input" placeholder="Название, артикул">
                     </div>
-                    <div class="col">
+                    <div class="col-lg-3 col-md-3 col-sm-12">
                         <input type="text" name="brand" class="input" placeholder="Бренд">
                     </div>
-                    <div class="col flex-grow-0">
+                    <div class="col-lg-2 col-md-3 col-sm-12 flex-grow-0 wrap-btn">
                         <button type="submit" class="btn btn_warn btn_search">найти
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="26" height="28"
                                  viewBox="0 0 26 28"
@@ -92,7 +92,7 @@
     <section class="section section-suppliers">
         <div class="container">
             <ul class="suppliers-list row">
-                <li class="suppliers-list__item col-lg-3">
+                <li class="suppliers-list__item col-lg-3 col-md-6 col-sm-12">
                     <a href="#" class="suppliers-list__link">
                         <div class="supplier-logo">
                             <img src="assets/img/maz.png" alt="minsky automobile plant" class="supplier-logo__img">
@@ -100,7 +100,7 @@
                         <h6 class="heading text_center heading_sm">МАЗ</h6>
                     </a>
                 </li>
-                <li class="suppliers-list__item col-lg-3">
+                <li class="suppliers-list__item col-lg-3 col-md-6 col-sm-12">
                     <a href="#" class="suppliers-list__link">
                         <div class="supplier-logo">
                             <img src="assets/img/logo-kamaz.png" alt="KAMAZ" class="supplier-logo__img">
@@ -108,7 +108,7 @@
                         <h6 class="heading text_center heading_sm">КАМАЗ</h6>
                     </a>
                 </li>
-                <li class="suppliers-list__item col-lg-3">
+                <li class="suppliers-list__item col-lg-3 col-md-6 col-sm-12">
                     <a href="#" class="suppliers-list__link">
                         <div class="supplier-logo">
                             <img src="assets/img/maz.png" alt="minsky automobile plant" class="supplier-logo__img">
@@ -116,7 +116,7 @@
                         <h6 class="heading text_center heading_sm">МАЗ</h6>
                     </a>
                 </li>
-                <li class="suppliers-list__item col-lg-3">
+                <li class="suppliers-list__item col-lg-3 col-md-6 col-sm-12">
                     <a href="#" class="suppliers-list__link">
                         <div class="supplier-logo">
                             <img src="assets/img/logo-kamaz.png" alt="KAMAZ" class="supplier-logo__img">
@@ -132,7 +132,7 @@
         <div class="container">
             <h2 class="section__title heading heading_lg text_center">ПОЧЕМУ С НАМИ ВЫГОДНО?</h2>
 
-            <div class="owl-carousel owl-theme">
+            <div class="owl-carousel owl-theme" id="slider-carousel">
                 <div class="item ">
                     <div class="card-wrap text_center">
                         <div class="icon-wrap">
@@ -195,8 +195,8 @@
                 </div>
 
             </div>
-            <div class="navigation owel-nav">
-                <button class="owel-arrow owel-prew">
+            <div class="navigation owl-nav">
+                <button class="owl-arrow owl-prew">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                          viewBox="0 0 20 20">
                         <title>chevron-thin-left</title>
@@ -204,7 +204,7 @@
                     </svg>
                 </button>
 
-                <button class="owel-arrow owel-next">
+                <button class="owl-arrow owl-next">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                          viewBox="0 0 20 20">
                         <title>chevron-thin-right</title>
@@ -218,7 +218,7 @@
         <section class="section section-about">
             <div class="container">
                 <div class="row">
-                    <a href="#" class="link col-lg-6">
+                    <a href="#" class="link col-lg-6  col-sm-12">
 
                         <h3 class="heading heading_sm text_center">УСЛОВИЯ ОПЛАТЫ И ДОСТАВКИ</h3>
                         <div class="card card-about">
@@ -229,7 +229,7 @@
                         </div>
                     </a>
 
-                    <a href="#" class="link col-lg-6">
+                    <a href="#" class="link col-lg-6 col-sm-12">
 
                         <h3 class="heading heading_sm text_center">О КОМПАНИИ</h3>
                         <div class="card card-about">
@@ -245,24 +245,24 @@
 
         <footer class="footer" style="background-image: url(assets/img/bg-detals.png);">
             <div class="container">
-                <div class="navbar">
-                    <nav class="main-nav">
-                        <ul class="main-nav__list">
-                            <li class="main-nav__item main-nav__item_active">
-                                <a href="#" class="main-nav__link">Каталог</a>
+                <div class="footer-navbar">
+                    <nav class="footer-nav">
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item decor_active decor">
+                                <a href="#" class="footer-nav__link">Каталог</a>
                             </li>
-                            <li class="main-nav__item">
-                                <a href="#" class="main-nav__link">О компании</a>
+                            <li class="footer-nav__item decor">
+                                <a href="#" class="footer-nav__link">О компании</a>
                             </li>
-                            <li class="main-nav__item">
-                                <a href="#" class="main-nav__link">Оплата и доставка</a>
+                            <li class="footer-nav__item decor">
+                                <a href="#" class="footer-nav__link">Оплата и доставка</a>
                             </li>
-                            <li class="main-nav__item">
-                                <a href="#" class="main-nav__link">контакты</a>
+                            <li class="footer-nav__item decor">
+                                <a href="#" class="footer-nav__link">контакты</a>
                             </li>
                         </ul>
                     </nav>
-                    <a href="tel:8(351)256-34-66" class="phone text_sm">8 (351) 256-34-66</a>
+                    <a href="tel:8(351)256-34-66" class="phone footer-phone text_sm">8 (351) 256-34-66</a>
                 </div>
             </div>
         </footer>

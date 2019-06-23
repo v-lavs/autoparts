@@ -16,8 +16,7 @@ $(document).ready(function () {
     /**
      * STICKY-HEADER
      **/
-
-    var scrolled;
+    let scrolled;
 
     function addScrollClass() {
         scrolled = window.pageYOffset || document.documentElement.scrollTop;
@@ -37,15 +36,25 @@ $(document).ready(function () {
     /**
      *  TOGGLE ACTIVE CLASS
      * */
+    const nav = $('.main-nav');
 
-    var nav = $('.header-menu');
-
-    $('.header .nav-link').click(function (e) {
+    $('.main-nav .decor').click(function (e) {
         e.preventDefault();
-        $('.header .nav-link').removeClass('active');
-        $(this).addClass('active');
+        $('.decor').removeClass('decor_active');
+        $(this).addClass('decor_active');
 
         nav.removeClass('open');
+        jQuery('.backdrop').fadeOut();
+    });
+
+    const navFooter = $('.footer-nav');
+
+    $('.footer-nav .decor').click(function (e) {
+        e.preventDefault();
+        $('.decor').removeClass('decor_active');
+        $(this).addClass('decor_active');
+
+        navFooter.removeClass('open');
         jQuery('.backdrop').fadeOut();
     });
 
@@ -65,29 +74,35 @@ $(document).ready(function () {
         jQuery('.backdrop').fadeOut();
     });
 
-    jQuery(".owl-carousel").owlCarousel({
-        loop: false,
-        touchDrag: true,
-        smartSpeed: 500,
-        margin: 30,
-        dots: false,
-        responsiveClass: true,
-        nav: true,
-        navContainer: ".navigation",
-        // navText: ["&lang;", "&rang;"],
+    /**
+     * OWL-CAROUSEL SCRIPT
+     **/
+    const owl = jQuery("#slider-carousel");
+    owl.owlCarousel({
+        items: 3,
+        itemsDesktop: [1000, 4],
+        itemsDesktopSmall: [900, 2],
+        itemsTablet: [600, 1],
+        itemsMobile: false,
+        pagination: false,
         responsive: {
-            0: {
-                items: 1
-            },
-            768: {
-                items: 2
-            },
-            970: {
-                items: 3,
-                loop: false,
-                rewind: true
-            }
+                    0: {
+            items: 1
+        },
+        768: {
+            items: 2
+        },
+        970: {
+            items: 3,
+            loop: false,
+            rewind: true
         }
+    }
     });
-
+    $(".owl-next").click(function() {
+        owl.trigger('owl.next');
+    });
+    $(".owl-prev").click(function() {
+        owl.trigger('owl.prev');
+    })
 });

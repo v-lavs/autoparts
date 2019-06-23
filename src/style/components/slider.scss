@@ -9,7 +9,7 @@
   }
 
   .icon-wrap {
-    margin-bottom: 1.25rem;
+    margin: 0 auto 1.25rem;
     max-width: 20.375rem;
 
     img {
@@ -29,7 +29,7 @@
   top: 50%;
   transform: translateY(-50%);
 
-  .owel-arrow {
+  .owl-arrow {
     display: flex;
     width: 40px;
     height: 40px;

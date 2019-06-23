@@ -40,3 +40,12 @@
     font-size: 1.0625rem;
   }
 }
+
+@include respond-to($sm) {
+  .heading_xl {
+    font-size: 2rem;
+  }
+  .heading_lg {
+    font-size: 1.5rem;
+  }
+}

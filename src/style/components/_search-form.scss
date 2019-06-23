@@ -8,8 +8,15 @@
   .btn_search {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+
     .icon {
       margin-left: 0.9rem;
+    }
+  }
+
+  @include respond-to($sm) {
+    .wrap-btn {
+      text-align: right;
     }
   }
 }

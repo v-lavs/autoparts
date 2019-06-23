@@ -2,9 +2,14 @@
 .footer {
   background: rgba(235, 235, 235, .4);
   padding: 2.5rem 0;
-  .navbar {
+
+  .footer-navbar {
     display: flex;
     justify-content: space-between;
+
+    .main-nav {
+      display: block;
+    }
   }
 
   .phone {
@@ -16,6 +21,32 @@
 
     &:hover {
       text-decoration: underline;
+    }
+  }
+
+  .footer-navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@include respond-to($lg) {
+  .main-nav {
+    display: block;
+  }
+}
+
+@include respond-to($xs) {
+  .footer {
+    .footer-navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer-phone {
+      margin-right: 0;
+    }
+    .footer-nav {
+      margin-bottom: 1.25rem;
     }
   }
 }

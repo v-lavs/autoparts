@@ -1,7 +1,30 @@
+
 .main-nav {
   display: flex;
   flex-grow: 1;
   padding: 0 2rem;
+  @media all and (max-width: 1190px) {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 320px;
+    width: 100%;
+    z-index: 9999;
+    background: $light-gray;
+    margin: 0;
+    padding: 40px;
+    text-align: right;
+    transform: translateX(100%);
+    transition: .8s ease;
+    &.open {
+      transform: translateX(0);
+
+      .main-nav__list {
+        display: block;
+      }
+    }
+  }
 
   &__list {
     display: flex;
@@ -12,39 +35,90 @@
   &__item {
     position: relative;
     padding: 0 1rem 0 2.8rem;
-
-    &:hover,
-    &:focus,
-    &_active {
-      &:before,
-      &:after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        background-color: $warning-color;
-        transform: translateY(-50%);
-        z-index: 1;
-      }
-
-      &:before {
-        left: 0;
-        width: 2rem;
-        height: 2px;
-      }
-
-      &:after {
-        width: 4px;
-        height: 4px;
-        border-radius: 50%;
-        overflow: hidden;
-        right: 0;
-      }
-    }
   }
 
   &__link {
     text-transform: uppercase;
     color: $primary-color;
     letter-spacing: 0.46px;
+  }
+
+  .close-nav {
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    display: block;
+    width: 23px;
+    height: 23px;
+    border: none;
+    padding: 5px;
+    background: url("/assets/img/icons/btn_menu_close.svg") center center no-repeat;
+    z-index: 10;
+  }
+
+  @include respond-to($lg) {
+    .main-nav__item {
+      margin-bottom: 1.875rem;
+    }
+  }
+}
+
+.footer-nav {
+  display: flex;
+  flex-grow: 1;
+  padding: 0 2rem;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  &__item {
+    position: relative;
+    padding: 0 1rem 0 2.8rem;
+  }
+  &__link {
+    text-transform: uppercase;
+    color: $primary-color;
+    letter-spacing: 0.46px;
+  }
+}
+
+.decor {
+  &:hover,
+  &:focus,
+  &_active {
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      background-color: $warning-color;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+
+    &:before {
+      left: 0;
+      width: 2rem;
+      height: 2px;
+    }
+
+    &:after {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      overflow: hidden;
+      right: 0;
+    }
+  }
+}
+
+@include respond-to($sm){
+  .footer-nav__list {
+    flex-direction: column;
+  }
+  .footer-nav__item {
+    text-align: right;
   }
 }
