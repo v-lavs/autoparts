@@ -80,29 +80,25 @@ $(document).ready(function () {
     const owl = jQuery("#slider-carousel");
     owl.owlCarousel({
         items: 3,
-        itemsDesktop: [1000, 4],
-        itemsDesktopSmall: [900, 2],
-        itemsTablet: [600, 1],
-        itemsMobile: false,
         pagination: false,
         responsive: {
-                    0: {
-            items: 1
-        },
-        768: {
-            items: 2
-        },
-        970: {
-            items: 3,
-            loop: false,
-            rewind: true
+            0: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            970: {
+                items: 3,
+                loop: false
+            }
         }
-    }
     });
-    $(".owl-next").click(function() {
+    console.log(owl);
+    $(".owl-next").click(function () {
         owl.trigger('owl.next');
     });
-    $(".owl-prev").click(function() {
+    $(".owl-prev").click(function () {
         owl.trigger('owl.prev');
     })
 });
