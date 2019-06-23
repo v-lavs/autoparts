@@ -57,23 +57,6 @@
     }
   }
 
-  .card__list_item {
-    position: relative;
-    padding: 0 4.125rem;
-
-    &:before {
-      position: absolute;
-      content: '';
-      background-image: url(../assets/img/star.png);
-      display: block;
-      width: 14px;
-      height: 14px;
-      left: 0;
-      top: 20%;
-
-    }
-  }
-
   .wrap-img {
     max-width: 5.375rem;
     height: 2.5rem;
@@ -109,27 +92,13 @@
 }
 
 @include respond-to($lg) {
-  .section-conditions {
-    .card__list_item {
-      &:before {
-        top: 13%;
-      }
-    }
-  }
+
 }
 
 @include respond-to($sm) {
-  .card__list_item {
-    &:before {
-      top: 8%;
-    }
-  }
+
 }
 
 @include respond-to($xs) {
-  .card__list_item {
-    &:before {
-      top: 5%;
-    }
-  }
+
 }
