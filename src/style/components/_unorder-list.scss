@@ -1,0 +1,20 @@
+.unorder-list {
+  list-style: none;
+
+  &__item {
+    position: relative;
+    padding: 0 4.125rem;
+    line-height: 1.5;
+
+    &:before {
+      position: absolute;
+      content: '';
+      background-image: url(../assets/img/star.png);
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      left: 0;
+      top: 6px;
+    }
+  }
+}

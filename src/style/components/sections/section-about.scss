@@ -9,19 +9,17 @@
     .heading {
       color: $primary-color;
     }
+
     .card {
       border-top: 2px solid $warning-color;
       border-left: 2px solid $warning-color;
       border-right: 2px solid $warning-color;
       transition: .35s;
+
       &:before,
       &:after {
         transition: background-color .35s;
         background-color: $warning-color;
-      }
-      .hide-img {
-        opacity: 1;
-        transition: opacity .35s;
       }
     }
   }
@@ -32,7 +30,6 @@
   }
 
   .card {
-    display: flex;
     padding: 2.1875rem 3.375rem;
     border-top: 2px solid $light;
     border-left: 2px solid $light;
@@ -78,37 +75,62 @@
   .wrap-img {
     max-width: 6.25rem;
     height: 6.25rem;
-    position: relative;
-    margin-left: 2.5rem;
-    margin-bottom: -3rem;
+    position: absolute;
+    right: 20%;
+    top: 45%;
+
     img {
       width: 100%;
       height: auto;
       display: block;
     }
   }
+}
 
-  @include respond-to($md){
-    .link {
-      margin-bottom: 1.875rem;
-      &:last-child {
-        margin-bottom: 0;
-      }
+@include respond-to($lg) {
+    .wrap-img {
+      max-width: 3.25rem;
+      top: 45%;
     }
   }
-  @include respond-to($xs){
+
+
+@include respond-to($md) {
+  .link {
+    margin-bottom: 1.875rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .wrap-img {
+      max-width: 4.25rem;
+      top: 65%;
+    }
+  }
+}
+
+@include respond-to($sm) {
+  .section-about {
+    .wrap-img {
+      max-width: 4.25rem;
+      top: 65%;
+    }
+  }
+}
+
+
+@include respond-to($xs) {
+  .section-about {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+
     .wrap-img {
       max-width: 66px;
       height: 50px;
-      align-self: flex-end;
-      margin-bottom: -13px;
     }
+
     .card {
       padding: 1.1875rem 2.375rem;
     }
-  }
-  @include respond-to($xs){
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
   }
 }

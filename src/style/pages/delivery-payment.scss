@@ -1,0 +1,104 @@
+.section-conditions {
+  padding-top: 6.25rem;
+  padding-bottom: 7.5rem;
+
+  .title-page {
+    margin-bottom: 2.8125rem;
+  }
+
+  .heading_sm {
+    letter-spacing: 0.323125rem;
+  }
+
+  .card {
+    position: relative;
+    color: $dirty;
+    padding: 2.1875rem 2.125rem;
+    line-height: 1.875rem;
+    margin-bottom: 6rem;
+    border-bottom: 2px solid $light;
+    border-left: 2px solid $light;
+    border-right: 2px solid $light;
+
+    &:last-child {
+      margin-bottom: 112px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 20.5rem;
+      background-color: $light;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      top: 0;
+      z-index: 1;
+      background-color: $light;
+    }
+
+    &:before {
+      width: 80%;
+      left: 0;
+
+    }
+
+    &:after {
+      width: 8%;
+      right: 0;
+    }
+  }
+
+  .wrap-img {
+    max-width: 5.375rem;
+    height: 2.5rem;
+    position: absolute;
+    right: 9%;
+    top: -7%;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .opportunities {
+    color: $dirty;
+
+    .heading {
+      margin-bottom: 1.875rem;
+    }
+  }
+
+  .payment-list {
+    padding: 1.875rem 2.125rem;
+  }
+}
+
+@include respond-to($md) {
+  .section-conditions {
+    padding-top: 1.25rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+@include respond-to($lg) {
+
+}
+
+@include respond-to($sm) {
+
+}
+
+@include respond-to($xs) {
+
+}
