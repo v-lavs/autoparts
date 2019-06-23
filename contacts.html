@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Контакты</title>
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <!--styles-->
+    <link rel="stylesheet" href="build/main.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="assets/img/autoparts.svg" alt="Автозапчасти"
+                         class="logo__img">
+                </a>
+
+                <nav class="main-nav">
+                    <button class="close-nav"></button>
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item decor_active  decor">
+                            <a href="catalog.html" class="main-nav__link">Каталог</a>
+                        </li>
+                        <li class="main-nav__item decor">
+                            <a href="about.html" class="main-nav__link">О компании</a>
+                        </li>
+                        <li class="main-nav__item decor">
+                            <a href="delivery-payment.html" class="main-nav__link">Оплата и
+                                доставка</a>
+                        </li>
+                        <li class="main-nav__item decor">
+                            <a href="" class="main-nav__link">контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="tel:8(351)256-34-66" class="phone-link">8 (351) 256-34-66</a>
+                <button class="burger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+                <div class="backdrop"></div>
+            </div>
+        </div>
+    </header>
+    <div class="search-bar">
+        <div class="container">
+            <form action="/" method="get" class="search-bar__form">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="heading heading_md">ПОИСК автозапчасти</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-3 col-sm-12">
+                        <input type="text" name="title" class="input"
+                               placeholder="Название, артикул">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <input type="text" name="brand" class="input" placeholder="Бренд">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-12 flex-grow-0 wrap-btn">
+                        <button type="submit" class="btn btn_warn btn_search">найти
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="26"
+                                 height="28"
+                                 viewBox="0 0 26 28"
+                                 class="icon icon-search">
+                                <title>search</title>
+                                <path d="M18 13c0-3.859-3.141-7-7-7s-7 3.141-7 7 3.141 7 7 7 7-3.141 7-7zM26 26c0 1.094-0.906 2-2 2-0.531 0-1.047-0.219-1.406-0.594l-5.359-5.344c-1.828 1.266-4.016 1.937-6.234 1.937-6.078 0-11-4.922-11-11s4.922-11 11-11 11 4.922 11 11c0 2.219-0.672 4.406-1.937 6.234l5.359 5.359c0.359 0.359 0.578 0.875 0.578 1.406z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+
+
+    </div>
+
+    <main>
+<div class="container">
+    <h1 class="title-page heading heading_lg text_center">контакты</h1>
+    <ul class="contact-list">
+        <li class="contact-list__item">
+
+        </li>
+    </ul>
+</div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-navbar">
+                <nav class="footer-nav">
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item decor_active decor">
+                            <a href="catalog.html" class="footer-nav__link">Каталог</a>
+                        </li>
+                        <li class="footer-nav__item decor">
+                            <a href="about.html" class="footer-nav__link">О компании</a>
+                        </li>
+                        <li class="footer-nav__item decor">
+                            <a href="delivery-payment.html" class="footer-nav__link">Оплата и доставка</a>
+                        </li>
+                        <li class="footer-nav__item decor">
+                            <a href="#" class="footer-nav__link">контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="tel:8(351)256-34-66" class="phone-link footer-phone text_sm">8 (351) 256-34-66</a>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="build/main.js"></script>
+</body>
+</html>
