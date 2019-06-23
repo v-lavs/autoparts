@@ -1,0 +1,82 @@
+.section-conditions {
+  padding-top: 6.25rem;
+
+  .title-page {
+    margin-bottom: 2.8125rem;
+  }
+
+  .card {
+    position: relative;
+    color: $dirty;
+    padding: 2.1875rem 2.125rem;
+    line-height: 1.875rem;
+    margin-bottom: 6rem;
+    border-bottom: 2px solid $light;
+    border-left: 2px solid $light;
+    border-right: 2px solid $light;
+    &:last-child {
+      margin-bottom: 112px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 20.5rem;
+      background-color: $light;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      top: 0;
+      z-index: 1;
+      background-color: $light;
+    }
+
+    &:before {
+      width: 80%;
+      left: 0;
+
+    }
+
+    &:after {
+      width: 8%;
+      right: 0;
+    }
+  }
+  .card__list_item {
+    position: relative;
+    padding: 0 4.125rem;
+
+    &:before {
+      position: absolute;
+      content: '';
+      background-image: url(../assets/img/star.png);
+      display: block;
+      width: 14px;
+      height: 14px;
+      left: 0;
+      top: 20%;
+
+    }
+  }
+  .wrap-img {
+    max-width: 5.375rem;
+    height: 2.5rem;
+    position: absolute;
+    right: 9%;
+    top: -7%;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}
