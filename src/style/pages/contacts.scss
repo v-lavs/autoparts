@@ -67,48 +67,47 @@
       display: inline-block;
       z-index: 1;
       left: -70px;
-
-
     }
 
-     .map:before {
+     &.map:before {
         background-image: url(../assets/img/icons/map2.svg);
       }
 
 
-    .mail {
+    &.mail:before {
       background-image: url(../assets/img/icons/mail-envelope-closed.svg);
     }
 
-    .fly {
+    &.fly:before {
       background-image: url(../assets/img/icons/paperplane.svg);
     }
 
-    .mobile {
+    &.mobile:before {
       background-image: url(../assets/img/icons/mobile.svg);
     }
 
-    .clock {
+    &.clock:before {
       background-image: url(../assets/img/icons/time.svg);
     }
   }
 
-  .section-location {
-    .map-responsive {
-      overflow: hidden;
-      padding-bottom: 29.25%;
-      position: relative;
-      height: 0;
-    }
+}
 
-    .map-responsive iframe {
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      height: 100%;
-      width: 100%;
-      position: absolute;
-    }
+.section-location {
+  .map-responsive {
+    overflow: hidden;
+    padding-bottom: 29.25%;
+    position: relative;
+    height: 0;
+  }
+
+  .map-responsive iframe {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
   }
 }

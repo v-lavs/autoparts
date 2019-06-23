@@ -1,13 +1,16 @@
 .pagination {
   display: flex;
   width: 100%;
-  padding-top: 12px 25px;
+  padding: 12px 25px;
+  border: 1px solid #e1e1e1;
   &__item {
     flex-grow: 1;
     min-height: 1px;
   }
   &__scale {
     flex-grow: 2;
+    display: flex;
+    justify-content: center;
   }
   &__btn {
     min-width: 30px;

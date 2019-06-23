@@ -3,6 +3,7 @@
   width: 100%;
   table-layout: fixed;
   font-size: 0.8125rem;
+  border: 1px solid #e1e1e1;
   &__header {
     display: table-row;
     font-weight: 700;
@@ -14,10 +15,24 @@
   }
   &__cell {
     display: table-cell;
-    padding: 12px 25px;
+    padding: 12px 10px;
     border-bottom: 1px solid #e1e1e1;
+    &.type {
+      width: 45%;
+      padding-left: 25px;
+    }
+    &.quantity {
+      width: 110px;
+    }
+    &.cell-btn {
+      padding-right: 25px;
+    }
   }
   .btn {
     font-size: inherit;
   }
+  & + .pagination {
+    border-top: none;
+  }
 }
+
