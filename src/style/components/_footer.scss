@@ -18,7 +18,8 @@
     color: $primary-color;
     font-weight: 700;
     transition: .35s;
-
+    margin: 0;
+    flex-shrink: 0;
     &:hover {
       text-decoration: underline;
     }
@@ -41,9 +42,6 @@
     .footer-navbar {
       flex-direction: column;
       align-items: center;
-    }
-    .footer-phone {
-      margin-right: 0;
     }
     .footer-nav {
       margin-bottom: 1.25rem;

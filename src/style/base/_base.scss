@@ -10,8 +10,7 @@ html {
     fill: $primary-color;
 }
 
-// @TODO RENAME THIS CLASS
-.bg-bottom {
+.bg_bottom {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -20,4 +19,14 @@ html {
 
 .color_grey {
     color: $light-dirty;
+}
+
+.color_primary {
+    color: $primary-color;
+}
+
+@include respond-to($xs){
+    .wrapper {
+        padding-top: 6.9375rem;
+    }
 }
