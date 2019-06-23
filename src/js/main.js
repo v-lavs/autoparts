@@ -39,7 +39,6 @@ $(document).ready(function () {
     const nav = $('.main-nav');
 
     $('.main-nav .decor').click(function (e) {
-        e.preventDefault();
         $('.decor').removeClass('decor_active');
         $(this).addClass('decor_active');
 
@@ -109,7 +108,7 @@ $(document).ready(function () {
     $('.number-input__control').click(function(e) {
         e.preventDefault();
         var input = $(this).parent().find('.number-input__field');
-        console.log(input)
+
         var inputValue = input.val();
         if ($(this).hasClass('number-input__control_plus')) {
             input.val(++inputValue);
