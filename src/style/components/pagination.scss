@@ -1,22 +1,58 @@
 .pagination {
   display: flex;
   width: 100%;
-  padding: 12px 25px;
+  padding: 1.0625rem 2.5rem;
   border: 1px solid #e1e1e1;
+
   &__item {
     flex-grow: 1;
     min-height: 1px;
+    width: 1.9375rem;
+    height: 2rem;
   }
+
   &__scale {
     flex-grow: 2;
     display: flex;
     justify-content: center;
   }
+
   &__btn {
-    min-width: 30px;
+    min-width: 1.875rem;
     text-align: center;
     font-size: 1rem;
-    padding: 5px;
+    padding: 0.3125rem;
     line-height: 1;
+
+    &:hover {
+      background: $primary-color;
+      color: $light;
+    }
+
+    &_nav {
+      background: $light;
+      display: inline-block;
+      padding: 0.5rem;
+    }
+
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  .rotate-right {
+    transform: rotate(90deg);
+  }
+
+  .rotate-left {
+    transform: rotate(-90deg);
+  }
+
+  .pagination__text {
+    display: inline-block;
+    color: #757575;
+    font-size: 1rem;
+    margin: 0 0.9375rem;
   }
 }

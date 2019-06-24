@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Автозапчасти</title>
+    <title>Автозапчасти Каталог</title>
     <!--fonts-->
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fonts/fonts.css">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="build/main.css">
 </head>
 
-<body class="page">
+<body class="page page-catalog">
 <div class="wrapper">
     <header class="header">
         <div class="container">
@@ -21,7 +21,7 @@
                          class="logo__img">
                 </a>
 
-                <nav class="main-nav">
+                <nav class="main-nav flex-shrink-0">
                     <button class="close-nav"></button>
                     <ul class="main-nav__list">
                         <li class="main-nav__item decor_active  decor">
@@ -39,7 +39,7 @@
                         </li>
                     </ul>
                 </nav>
-                <a href="tel:8(351)256-34-66" class="phone-link">8 (351) 256-34-66</a>
+                <a href="tel:8(351)256-34-66" class="phone-link flex-shrink-0">8 (351) 256-34-66</a>
                 <button class="burger">
                     <span class="line"></span>
                     <span class="line"></span>
@@ -86,8 +86,9 @@
 
     <main>
         <div class="container">
+            <h1 class="heading heading_lg text_center">Автозапчасти МАЗ</h1>
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 sidebar">
                     <section class="sidebar__section">
                         <h4 class="heading heading_default">
                             <small>Есть ли вопросы?</small>
@@ -97,8 +98,8 @@
                             256-34-66</a>
                         <div>
                             <select class="custom-select">
-                                <option disabled>МАЗ</option>
-                                <option value="КАМАЗ">КАМАЗ</option>
+                                <option class="select-items" disabled>МАЗ</option>
+                                <option class="select-items" value="КАМАЗ">КАМАЗ</option>
                             </select>
                         </div>
                     </section>
@@ -115,7 +116,6 @@
                     </section>
                 </div>
                 <div class="col-lg-8">
-                    <h1 class="heading heading_lg text_center">Автозапчасти МАЗ</h1>
 
                     <div class="catalog-table">
                         <div class="catalog-table__header">
@@ -139,16 +139,16 @@
                                     <input type="number" value="0"
                                            class="number-input__field">
                                     <button class="number-input__control number-input__control_minus">
-                                        -
+                                        <img src="assets/img/vn.png" alt="arrow">
                                     </button>
                                     <button class="number-input__control number-input__control_plus">
-                                        +
+                                        <img src="assets/img/v.png" alt="arrow">
                                     </button>
                                 </div>
                             </div>
                             <div
                                     class="catalog-table__cell cell-btn"><a href="#"
-                                                                   class="btn btn_warn">отложить</a>
+                                                                   class="btn btn_warn btn_md">отложить</a>
                             </div>
                         </div>
                         <div class="catalog-table__row">
@@ -167,22 +167,27 @@
                                     <input type="number" value="0"
                                            class="number-input__field">
                                     <button class="number-input__control number-input__control_minus">
-                                        -
+                                        <img src="assets/img/vn.png" alt="arrow">
                                     </button>
                                     <button class="number-input__control number-input__control_plus">
-                                        +
+                                        <img src="assets/img/v.png" alt="arrow">
                                     </button>
                                 </div>
                             </div>
                             <div
                                     class="catalog-table__cell cell-btn"><a href="#"
-                                                                   class="btn btn_warn">отложить</a>
+                                                                   class="btn btn_warn btn_md">отложить</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="pagination">
-                        <div class="pagination__item"></div>
+                        <div class="pagination__item">
+                            <span class="pagination__btn pagination__btn_nav">
+                                <img src="assets/img/v.png" alt="arrow" class="img rotate-left">
+                            </span>
+                            <span class="pagination__text">Пред.</span>
+                        </div>
                         <div class="pagination__item pagination__scale">
                             <a class="pagination__btn">1</a>
                             <a class="pagination__btn">2</a>
@@ -193,7 +198,12 @@
                             <a class="pagination__btn">7</a>
                             <a class="pagination__btn">8</a>
                         </div>
-                        <div class="pagination__item"></div>
+                        <div class="pagination__item">
+                            <span class="pagination__text">След.</span>
+                            <span class="pagination__btn pagination__btn_nav">
+                                <img src="assets/img/v.png" alt="arrow" class="img rotate-right">
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
