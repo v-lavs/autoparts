@@ -1,6 +1,7 @@
 .sidebar {
   border: 3px solid #ededed;
   padding: 1.875rem 2.5rem;
+  height: 100%;
   .heading_default {
     color: #2e2e2e;
     font-weight: 400;
@@ -11,9 +12,8 @@
   font-size: 0.875rem;
 
   &__section {
-    border-bottom: 2px solid #d4d5e0;
     padding: 0 0 0.9375rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.9rem;
 
     &:last-child {
       border-bottom: none;
@@ -27,9 +27,22 @@
   }
 
   &__title {
+    position: relative;
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 0.9375rem;
+    padding-bottom: 0.9375rem;
+&:after {
+  position: absolute;
+  content: '';
+  display: block;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: #d5d5d5;
+  z-index: 2;
+}
   }
 
   .sidebar__section {
@@ -68,8 +81,7 @@
         height: 30px;
         top: 0;
         bottom: 0;
-        z-index: 1;
-
+        z-index: 2;
       }
     }
     .custom-select::-ms-expand {
@@ -85,8 +97,8 @@
   }
   .question__text {
     font-size: 1rem;
-    margin-bottom: 0.1875rem;
-    color: #757575;;
+    margin-bottom: 0.3rem;
+    color: #757575;
   }
 
 
