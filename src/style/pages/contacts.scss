@@ -8,16 +8,19 @@
 }
 
 .contact-list {
-  margin: 0 -23px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -1.4375rem 2rem;
   font-size: 1.5rem;
-  margin-bottom: 2rem;
 
   &__item {
-    padding: 0 23px;
+    width: 33%;
+    padding: 0 1.4375rem;
   }
 
   &__link {
-    display: inline-block;
+    display: block;
   }
 
   .card-contact {
@@ -54,13 +57,13 @@
 
   .text_contacts {
     position: relative;
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
 
     &:before {
       position: absolute;
       content: '';
-      width: 34px;
-      height: 35px;
+      width: 2.5rem;
+      height: 2.5rem;
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
@@ -69,24 +72,35 @@
       left: -70px;
     }
 
-     &.map:before {
-        background-image: url(../assets/img/icons/map2.svg);
-      }
+    &.map:before {
+      width: 2rem;
+      height: 2rem;
+      background-image: url(../assets/img/icons/map2.svg);
+    }
 
 
     &.mail:before {
-      background-image: url(../assets/img/icons/mail-envelope-closed.svg);
+      left: -4.2rem;
+      bottom: -0.5rem;
+      background-image: url(../assets/img/icons/mail.svg);
     }
 
     &.fly:before {
+      width: 2.125rem;
+      height: 2.125rem;
       background-image: url(../assets/img/icons/paperplane.svg);
     }
 
     &.mobile:before {
+      width: 1.75rem;
+      height: 2.65rem;
+      left: -4.125rem;
+      bottom: -1.875rem;
       background-image: url(../assets/img/icons/mobile.svg);
     }
 
     &.clock:before {
+      bottom: -0.5rem;
       background-image: url(../assets/img/icons/time.svg);
     }
   }
@@ -109,5 +123,46 @@
     height: 100%;
     width: 100%;
     position: absolute;
+  }
+}
+
+@include respond-to($lg) {
+  .section-contacts {
+    padding-top: 2.125rem;
+    padding-bottom: 4.75rem;
+  }
+  .contact-list {
+    font-size: 1.3rem;
+
+    &__item {
+      width: 50%;
+      margin-bottom: 1.5rem;
+    }
+  }
+  .section-location {
+    .map-responsive {
+      padding-bottom: 50%;
+    }
+  }
+}
+
+@include respond-to($md) {
+  .contact-list {
+    &__item {
+      width: 80%;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+@include respond-to($sm) {
+  .section-contacts {
+    padding-top: 0.125rem;
+    padding-bottom: 1.75rem;
+  }
+  .section-location {
+    .map-responsive {
+      padding-bottom: 70%;
+    }
   }
 }

@@ -9,56 +9,40 @@
 <body>
 <div class="wrapper">
     <header class="header">
-        <button class="burger">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-        </button>
+        <div class="container">
+            <div class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="assets/img/autoparts.svg" alt="Автозапчасти"
+                         class="logo__img">
+                </a>
 
-        <a href="/" class="logo">
-            <img src="assets/img/autoparts.svg" alt="Автозапчасти" class="logo__img">
-        </a>
-
-        <nav class="header__menu">
-            <button class="close-nav"></button>
-            <ul class="nav">
-                <li class="nav__item">
-                    <a class="nav__link active">Каталог</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link">О компании</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link">Оплата и доставка</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link">контакты</a>
-                </li>
-            </ul>
-        </nav>
-        <a href="tel:8 (351) 256-34-66" class="phone-link">8 (351) 256-34-66</a>
-
-        <div class="search-bar">
-            <form action="/" method="get" class="search-bar__form">
-                <div class="input-group">
-                    <fieldset>
-                        <legend>ПОИСК автозапчасти</legend>
-                        <input type="text" name="title" class="search-bar__form_control"
-                               placeholder="Название, артикул">
-                        <input type="text" name="brand" class="search-bar__form_control" placeholder="Бренд">
-                        <button type="submit" class="input-group-addon search-btn">найти
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="26" height="28"
-                                 viewBox="0 0 26 28" class="icon icon-search">
-                                <title>search</title>
-                                <path d="M18 13c0-3.859-3.141-7-7-7s-7 3.141-7 7 3.141 7 7 7 7-3.141 7-7zM26 26c0 1.094-0.906 2-2 2-0.531 0-1.047-0.219-1.406-0.594l-5.359-5.344c-1.828 1.266-4.016 1.937-6.234 1.937-6.078 0-11-4.922-11-11s4.922-11 11-11 11 4.922 11 11c0 2.219-0.672 4.406-1.937 6.234l5.359 5.359c0.359 0.359 0.578 0.875 0.578 1.406z"></path>
-                            </svg>
-                        </button>
-                    </fieldset>
-                </div>
-            </form>
-
+                <nav class="main-nav">
+                    <button class="close-nav"></button>
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item decor_active  decor">
+                            <a href="catalog.html" class="main-nav__link">Каталог</a>
+                        </li>
+                        <li class="main-nav__item decor">
+                            <a href="about-company.html" class="main-nav__link">О компании</a>
+                        </li>
+                        <li class="main-nav__item decor">
+                            <a href="delivery-payment.html" class="main-nav__link">Оплата и
+                                доставка</a>
+                        </li>
+                        <li class="main-nav__item decor">
+                            <a href="contacts.html" class="main-nav__link">контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="tel:8(351)256-34-66" class="phone-link">8 (351) 256-34-66</a>
+                <button class="burger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+                <div class="backdrop"></div>
+            </div>
         </div>
-        <div class="backdrop"></div>
     </header>
 <main>
     <div class="product-details">

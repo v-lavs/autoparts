@@ -3,30 +3,15 @@
   padding-bottom: 4.375rem;
 
   .suppliers-list {
-    margin: 0 -15px 1.25rem;
+    margin: 0 -0.9375rem 1.25rem;
 
     &__item {
-      padding: 15px;
+      padding: 0.9375rem;
     }
 
     &__link {
       display: block;
       flex-grow: 1;
-    }
-  }
-
-  .supplier-logo {
-    display: flex;
-    background: linear-gradient(to bottom, #fff 30%, #f3f3f3 25%);
-    padding-bottom: 1.5625rem;
-    height: 6.25rem;
-    margin-bottom: 0.9375rem;
-
-    &__img {
-      display: block;
-      margin: auto;
-      width: auto;
-      height: 100%;
     }
   }
 

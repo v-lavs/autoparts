@@ -1,0 +1,19 @@
+.supplier-logo {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom, #fff 30%, #f3f3f3 25%);
+  padding-bottom: 1.5625rem;
+  height: 6.25rem;
+  margin-bottom: 0.9375rem;
+  &_big {
+    padding-bottom: 3.25rem;
+    height: 14.375rem;
+  }
+
+  &__img {
+    display: block;
+    margin: auto;
+    width: auto;
+    height: 100%;
+  }
+}
