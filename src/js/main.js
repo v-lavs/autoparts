@@ -3,7 +3,7 @@
  * */
 
 //= include ../lib/jquery-3.3.1.min.js
-//= include ../lib/owl-slider/js/owl.carousel.js
+//= include ../lib/owl-slider/js/build.js
 
 /**
  * CUSTOM SCRIPTS
@@ -80,6 +80,7 @@ $(document).ready(function () {
     owl.owlCarousel({
         items: 3,
         pagination: false,
+        nav: true,
         responsive: {
             0: {
                 items: 1
@@ -93,13 +94,6 @@ $(document).ready(function () {
             }
         }
     });
-    console.log(owl);
-    $(".owl-next").click(function () {
-        owl.trigger('owl.next');
-    });
-    $(".owl-prev").click(function () {
-        owl.trigger('owl.prev');
-    })
 
     /*
      * NUMBER INPUT HANDLER

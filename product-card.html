@@ -1,233 +1,228 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Карточка товара</title>
-        <!--fonts-->
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="fonts/fonts.css">
-        <!--styles-->
-        <link rel="stylesheet" href="build/main.css">
-    </head>
-    <body class="product-page page">
-        <div class="wrapper">
-            <header class="header">
-                <div class="container">
-                    <div class="navbar">
-                        <a href="index.html" class="logo">
-                            <img src="assets/img/autoparts.svg" alt="Автозапчасти"
-                                 class="logo__img">
-                        </a>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Карточка товара</title>
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <!--styles-->
+    <link rel="stylesheet" href="build/main.css">
+</head>
+<body class="product-page page">
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="assets/img/autoparts.svg" alt="Автозапчасти"
+                         class="logo__img">
+                </a>
 
-                        <nav class="main-nav">
-                            <button class="close-nav"></button>
-                            <ul class="main-nav__list">
-                                <li class="main-nav__item decor_active  decor">
-                                    <a href="catalog.html" class="main-nav__link">Каталог</a>
-                                </li>
-                                <li class="main-nav__item decor">
-                                    <a href="about-company.html" class="main-nav__link">О компании</a>
-                                </li>
-                                <li class="main-nav__item decor">
-                                    <a href="delivery-payment.html" class="main-nav__link">Оплата и
-                                        доставка</a>
-                                </li>
-                                <li class="main-nav__item decor">
-                                    <a href="contacts.html" class="main-nav__link">контакты</a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <a href="tel:8(351)256-34-66" class="phone-link">8 (351) 256-34-66</a>
-                        <button class="burger">
-                            <span class="line"></span>
-                            <span class="line"></span>
-                            <span class="line"></span>
+                <nav class="main-nav">
+                    <button class="close-nav"></button>
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item decor_active  decor">
+                            <a href="catalog.html" class="main-nav__link">Каталог</a>
+                        </li>
+                        <li class="main-nav__item decor">
+                            <a href="about-company.html" class="main-nav__link">О компании</a>
+                        </li>
+                        <li class="main-nav__item decor">
+                            <a href="delivery-payment.html" class="main-nav__link">Оплата и
+                                доставка</a>
+                        </li>
+                        <li class="main-nav__item decor">
+                            <a href="contacts.html" class="main-nav__link">контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="tel:8(351)256-34-66" class="phone-link">8 (351) 256-34-66</a>
+                <button class="burger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+                <div class="backdrop"></div>
+            </div>
+        </div>
+    </header>
+    <div class="search-bar">
+        <div class="container">
+            <form action="/" method="get" class="search-bar__form">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <h4 class="heading heading_md">ПОИСК автозапчасти</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-3 col-sm-12">
+                        <input type="text" name="title" class="input"
+                               placeholder="Название, артикул">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <input type="text" name="brand" class="input" placeholder="Бренд">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-12 flex-grow-0 wrap-btn">
+                        <button type="submit" class="btn btn_warn btn_search">найти
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="26"
+                                 height="28"
+                                 viewBox="0 0 26 28"
+                                 class="icon icon-search">
+                                <title>search</title>
+                                <path d="M18 13c0-3.859-3.141-7-7-7s-7 3.141-7 7 3.141 7 7 7 7-3.141 7-7zM26 26c0 1.094-0.906 2-2 2-0.531 0-1.047-0.219-1.406-0.594l-5.359-5.344c-1.828 1.266-4.016 1.937-6.234 1.937-6.078 0-11-4.922-11-11s4.922-11 11-11 11 4.922 11 11c0 2.219-0.672 4.406-1.937 6.234l5.359 5.359c0.359 0.359 0.578 0.875 0.578 1.406z"></path>
+                            </svg>
                         </button>
-                        <div class="backdrop"></div>
                     </div>
                 </div>
-            </header>
-            <div class="search-bar">
-                <div class="container">
-                    <form action="/" method="get" class="search-bar__form">
-                        <div class="row align-items-center">
-                            <div class="col-lg-3 col-md-3 col-sm-12">
-                                <h4 class="heading heading_md">ПОИСК автозапчасти</h4>
-                            </div>
-                            <div class="col-lg-4 col-md-3 col-sm-12">
-                                <input type="text" name="title" class="input"
-                                       placeholder="Название, артикул">
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-12">
-                                <input type="text" name="brand" class="input" placeholder="Бренд">
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-12 flex-grow-0 wrap-btn">
-                                <button type="submit" class="btn btn_warn btn_search">найти
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="26"
-                                         height="28"
-                                         viewBox="0 0 26 28"
-                                         class="icon icon-search">
-                                        <title>search</title>
-                                        <path d="M18 13c0-3.859-3.141-7-7-7s-7 3.141-7 7 3.141 7 7 7 7-3.141 7-7zM26 26c0 1.094-0.906 2-2 2-0.531 0-1.047-0.219-1.406-0.594l-5.359-5.344c-1.828 1.266-4.016 1.937-6.234 1.937-6.078 0-11-4.922-11-11s4.922-11 11-11 11 4.922 11 11c0 2.219-0.672 4.406-1.937 6.234l5.359 5.359c0.359 0.359 0.578 0.875 0.578 1.406z"></path>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
 
 
-                    </form>
-                </div>
+            </form>
+        </div>
 
 
-            </div>
+    </div>
 
-            <main>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="product-card block block_border">
-                                <div class="row">
-                                    <div class="col-lg-8 col-sm-10 col-12">
-                                        <a href="#" class="link link_default product-card__link">Вернуться в
-                                            каталог</a>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="product-card block block_border">
+                        <div class="row">
+                            <div class="col-lg-8 col-sm-10 col-12">
+                                <a href="#" class="link link_default product-card__link">Вернуться в
+                                    каталог</a>
 
-                                        <h1
-                                                class="product-card__title heading heading_default">Гильза с поршнем
-                                            ЯМЗ-6561,6581 с кольцами
-                                            в сборе АВТОДИЗЕЛЬ 658.1004005 (инд.ГБЦ)</h1>
-                                        <div class="product-card__table">
-                                            <div class="product-card__row">
-                                                <div
-                                                        class="product-card__cell product-card__cell_title">Каталожный
-                                                    номер:</div>
-                                                <div class="product-card__cell">5336-3501105/54326-350110</div>
-                                            </div>
-                                            <div class="product-card__row">
-                                                <div
-                                                        class="product-card__cell product-card__cell_title">
-                                                    Марка:</div>
-                                                <div class="product-card__cell">МАЗ</div>
-                                            </div>
-                                            <div class="product-card__row">
-                                                <div
-                                                        class="product-card__cell product-card__cell_title">На
-                                                    складе:</div>
-                                                <div class="product-card__cell">Челябинск ул. Павелецкая 28а</div>
-                                            </div>
-                                            <div class="product-card__row">
-                                                <div
-                                                        class="product-card__cell product-card__cell_title">
-                                                    Категория:</div>
-                                                <div class="product-card__cell">Тормозная система</div>
-                                            </div>
-                                            <div class="product-card__row">
-                                                <div
-                                                        class="product-card__cell product-card__cell_title">
-                                                    цена</div>
-                                                <div class="product-card__cell">230.00 Р</div>
-                                            </div>
-                                            <div class="product-card__row">
-                                                <div
-                                                        class="product-card__cell product-card__cell_title">
-                                                    количество</div>
-                                                <div class="product-card__cell">
-                                                    <div class="d-flex justify-content-start">
-                                                        <div class="number-input flex-shrink-0">
-                                                            <input type="number" value="0"
-                                                                   class="number-input__field">
-                                                            <button class="number-input__control number-input__control_minus">
-                                                                <!--<img src="assets/img/vn.png" alt="arrow">-->
-                                                            </button>
-                                                            <button class="number-input__control number-input__control_plus">
-                                                                <!--<img src="assets/img/v.png" alt="arrow">-->
-                                                            </button>
-                                                        </div>
-
-                                                        <button class="btn btn_warn" type="submit">
-                                                            отложить в заказ
-                                                        </button>
-                                                    </div>
+                                <h1 class="product-card__title heading heading_default">
+                                    Гильза с поршнем ЯМЗ-6561,6581 с кольцами
+                                    в сборе АВТОДИЗЕЛЬ 658.1004005 (инд.ГБЦ)
+                                </h1>
+                                <div class="product-card__table">
+                                    <div class="product-card__row">
+                                        <div class="product-card__cell product-card__cell_title">Каталожный номер:
+                                        </div>
+                                        <div class="product-card__cell">5336-3501105/54326-350110</div>
+                                    </div>
+                                    <div class="product-card__row">
+                                        <div class="product-card__cell product-card__cell_title">
+                                            Марка:
+                                        </div>
+                                        <div class="product-card__cell">МАЗ</div>
+                                    </div>
+                                    <div class="product-card__row">
+                                        <div class="product-card__cell product-card__cell_title">На
+                                            складе:
+                                        </div>
+                                        <div class="product-card__cell">Челябинск ул. Павелецкая 28а</div>
+                                    </div>
+                                    <div class="product-card__row">
+                                        <div class="product-card__cell product-card__cell_title">
+                                            Категория:
+                                        </div>
+                                        <div class="product-card__cell">Тормозная система</div>
+                                    </div>
+                                    <div class="product-card__row">
+                                        <div class="product-card__cell product-card__cell_title">
+                                            цена
+                                        </div>
+                                        <div class="product-card__cell">230.00 Р</div>
+                                    </div>
+                                    <div class="product-card__row">
+                                        <div class="product-card__cell product-card__cell_title">
+                                            количество
+                                        </div>
+                                        <div class="product-card__cell">
+                                            <div class="d-flex justify-content-start">
+                                                <div class="number-input flex-shrink-0">
+                                                    <input type="number" value="0"
+                                                           class="number-input__field">
+                                                    <button class="number-input__control number-input__control_minus"></button>
+                                                    <button class="number-input__control number-input__control_plus"></button>
                                                 </div>
+
+                                                <button class="btn btn_warn" type="submit">
+                                                    отложить в заказ
+                                                </button>
                                             </div>
                                         </div>
-
-                                        <a href="#" class="link link_default product-card__link">Вернуться в
-                                            каталог</a>
                                     </div>
                                 </div>
+
+                                <a href="#" class="link link_default product-card__link">Вернуться в
+                                    каталог</a>
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <aside class="sidebar block block_border">
-                                <section class="sidebar__section">
-                                    <h4 class="heading heading_default">
-                                        <small>Есть вопросы по этой запчасти?</small>
-                                    </h4>
-                                    <p class="question__text">Задайте их по телефону</p>
-                                    <a href="tel:8 (351) 256-34-66" class="phone-link">8 (351)
-                                        256-34-66</a>
-                                </section>
-
-                                <section class="sidebar__section">
-                                    <h4 class="sidebar__title">Условия доставки</h4>
-                                    <ul class="unorder-list">
-                                        <li class="unorder-list__item">Отгрузка ж/д контейнерами,
-                                            автотранспортом
-                                            по всей территории РФ и странам СНГ.
-                                        </li>
-                                        <li class="unorder-list__item">Компания имеет возможность поставлять
-                                            запасные части крупными и мелкими партиями.
-                                        </li>
-                                    </ul>
-                                </section>
-
-                                <section class="sidebar__section">
-                                    <h4 class="sidebar__title">Условия оплаты</h4>
-                                    <ul class="unorder-list">
-                                        <li class="unorder-list__item">
-                                            Оплата при получении
-                                        </li>
-                                        <li class="unorder-list__item">
-                                            Оплата в офисе при самовывозе
-                                        </li>
-                                        <li class="unorder-list__item">
-                                            Оплата безналичным расчетом
-                                        </li>
-                                    </ul>
-                                </section>
-
-
-                            </aside>
-                        </div>
                     </div>
                 </div>
-            </main>
+                <div class="col-lg-4">
+                    <aside class="sidebar block block_border">
+                        <section class="sidebar__section">
+                            <h4 class="heading heading_default">
+                                <small>Есть вопросы по этой запчасти?</small>
+                            </h4>
+                            <p class="question__text">Задайте их по телефону</p>
+                            <a href="tel:8 (351) 256-34-66" class="phone-link">8 (351)
+                                256-34-66</a>
+                        </section>
 
-            <footer class="footer" style="background-image: url(assets/img/bg-detals.png);">
-                <div class="container">
-                    <div class="footer-navbar">
-                        <nav class="footer-nav">
-                            <ul class="footer-nav__list">
-                                <li class="footer-nav__item decor_active decor">
-                                    <a href="catalog.html" class="footer-nav__link">Каталог</a>
+                        <section class="sidebar__section">
+                            <h4 class="sidebar__title">Условия доставки</h4>
+                            <ul class="unorder-list">
+                                <li class="unorder-list__item">Отгрузка ж/д контейнерами,
+                                    автотранспортом
+                                    по всей территории РФ и странам СНГ.
                                 </li>
-                                <li class="footer-nav__item decor">
-                                    <a href="about-company.html" class="footer-nav__link">О компании</a>
-                                </li>
-                                <li class="footer-nav__item decor">
-                                    <a href="delivery-payment.html" class="footer-nav__link">Оплата и доставка</a>
-                                </li>
-                                <li class="footer-nav__item decor">
-                                    <a href="#" class="footer-nav__link">контакты</a>
+                                <li class="unorder-list__item">Компания имеет возможность поставлять
+                                    запасные части крупными и мелкими партиями.
                                 </li>
                             </ul>
-                        </nav>
-                        <a href="tel:8(351)256-34-66" class="phone-link footer-phone text_sm">8 (351) 256-34-66</a>
-                    </div>
+                        </section>
+
+                        <section class="sidebar__section">
+                            <h4 class="sidebar__title">Условия оплаты</h4>
+                            <ul class="unorder-list">
+                                <li class="unorder-list__item">
+                                    Оплата при получении
+                                </li>
+                                <li class="unorder-list__item">
+                                    Оплата в офисе при самовывозе
+                                </li>
+                                <li class="unorder-list__item">
+                                    Оплата безналичным расчетом
+                                </li>
+                            </ul>
+                        </section>
+
+
+                    </aside>
                 </div>
-            </footer>
+            </div>
         </div>
-        <script src="build/main.js"></script>
-    </body>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-navbar">
+                <nav class="footer-nav">
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item decor_active decor">
+                            <a href="catalog.html" class="footer-nav__link">Каталог</a>
+                        </li>
+                        <li class="footer-nav__item decor">
+                            <a href="about-company.html" class="footer-nav__link">О компании</a>
+                        </li>
+                        <li class="footer-nav__item decor">
+                            <a href="delivery-payment.html" class="footer-nav__link">Оплата и доставка</a>
+                        </li>
+                        <li class="footer-nav__item decor">
+                            <a href="#" class="footer-nav__link">контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="tel:8(351)256-34-66" class="phone-link footer-phone text_sm">8 (351) 256-34-66</a>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="build/main.js"></script>
+</body>
 </html>
