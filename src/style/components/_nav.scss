@@ -16,11 +16,14 @@
     padding: 40px;
     text-align: right;
     transform: translateX(100%);
-    transition: .8s ease;
+    transition: .7s ease;
     &.open {
       transform: translateX(0);
 
       .main-nav__list {
+        display: block;
+      }
+      .close-nav {
         display: block;
       }
     }
@@ -34,12 +37,14 @@
 
   &__item {
     position: relative;
+    flex-shrink: 0;
     padding: 0 1rem 0 2.8rem;
   }
 
   &__link {
     text-transform: uppercase;
     color: $primary-color;
+    font-weight: 700;
     letter-spacing: 0.46px;
   }
 
@@ -52,7 +57,7 @@
     height: 23px;
     border: none;
     padding: 5px;
-    background: url("/assets/img/icons/btn_menu_close.svg") center center no-repeat;
+    background: url("../assets/img/icons/close.svg") center center no-repeat;
     z-index: 10;
   }
 

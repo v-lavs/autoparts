@@ -1,7 +1,7 @@
 .page-catalog {
   font-family: $secondary-font;
   .heading_lg {
-    margin-bottom: 2.25rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -12,7 +12,7 @@
   width: 100%;
   table-layout: fixed;
   font-size: 1rem;
-  border: 1px solid #e1e1e1;
+  border: 3px solid #ededed;
   &__header {
     display: table-row;
     font-size: 0.8125rem;
@@ -31,7 +31,7 @@
     &.type {
       width: 54%;
       padding-left: 1.5625rem;
-      padding-bottom: 2.5rem;
+      padding-bottom: 1.5rem;
     }
     &.quantity {
       width: 6.875rem;

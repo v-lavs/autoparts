@@ -1,14 +1,15 @@
-.section-company{
+.article{
    .heading {
     color: $black;
     margin-bottom: 2.5rem;
   }
   .article__text {
     color: $dirty;
+    line-height: 1.6875rem;
     font-size: 1.125rem;
     margin-bottom: 1.25rem;
   }
   .supplier-logo {
-    margin-bottom: 3.75rem;
+    margin-bottom: 4.0625rem;
   }
 }

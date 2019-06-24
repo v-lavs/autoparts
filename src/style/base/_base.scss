@@ -18,25 +18,31 @@ html {
 }
 
 .color_grey {
-    color: $light-dirty;
+  color: $light-dirty;
 }
 
 .color_primary {
-    color: $primary-color;
+  color: $primary-color;
 }
 
-@include respond-to($xs){
-    .wrapper {
-        padding-top: 6.9375rem;
-    }
+@include respond-to($md) {
+  padding-top: 6.9375rem;
+}
+
+@include respond-to($xs) {
+  .wrapper {
+    padding-top: 8.8rem;
+  }
 }
 
 .link {
   display: inline-block;
   -webkit-transition: .35s;
   transition: .35s;
+
   &_default {
     color: #d5d5d5;
+
     &:hover,
     &:focus {
       color: #303c84;
@@ -48,8 +54,10 @@ html {
 .phone-link {
   font-size: 1.5rem;
   color: $primary-color;
+  flex-shrink: 0;
   font-weight: 700;
   transition: .35s;
+
   &:hover {
     text-decoration: underline;
   }
@@ -57,9 +65,20 @@ html {
 
 .block {
   padding: 25px 20px;
+
   &_border {
     border: 2px solid #ededed;
   }
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 

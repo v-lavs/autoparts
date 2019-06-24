@@ -37,6 +37,23 @@
   width: 100%;
   appearance: none;
   padding: 0.625rem 2rem 0.5rem;
+  font-size: 1.125rem;
+  
+  &_order{
+    position: relative;
+      border: none;
+      border-bottom: 2px solid #d5d5d5;
+      padding-left: 43px;
+    &:before {
+      position: absolute;
+      content: '';
+      background-image: url(../assets/img/map2.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 0 0;
+      z-index: 2;
+    }
+  }
 }
 
 .icon {

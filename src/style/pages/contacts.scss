@@ -21,6 +21,12 @@
 
   &__link {
     display: block;
+    transition: .35s;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
   }
 
   .card-contact {

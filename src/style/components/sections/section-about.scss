@@ -6,10 +6,15 @@
 
   .link:hover,
   .link:focus {
+    .wrap-img .hide {
+      opacity: 1;
+    }
     .heading {
       color: $primary-color;
     }
-
+.text_md {
+  color: $primary-color;
+}
     .card {
       border-top: 2px solid $warning-color;
       border-left: 2px solid $warning-color;
@@ -69,6 +74,7 @@
   }
 
   .text_md {
+    color: $dirty;
     max-width: 16.25rem;
   }
 
@@ -78,21 +84,37 @@
     position: absolute;
     right: 20%;
     top: 45%;
+  }
+  .img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 
-    img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+  .img_about {
+    transition: .42s;
+  }
+
+  .hide {
+    position: absolute;
+    width: 100%;
+    left: 3px;
+    right: 0;
+    bottom: 0;
+    top: 3px;
+    opacity: 0;
+    z-index: 2;
+    display: block;
+    transition: .42s;
   }
 }
 
 @include respond-to($lg) {
-    .wrap-img {
-      max-width: 3.25rem;
-      top: 45%;
-    }
+  .wrap-img {
+    max-width: 3.25rem;
+    top: 45%;
   }
+}
 
 
 @include respond-to($md) {
@@ -102,6 +124,7 @@
     &:last-child {
       margin-bottom: 0;
     }
+
     .wrap-img {
       max-width: 4.25rem;
       top: 65%;

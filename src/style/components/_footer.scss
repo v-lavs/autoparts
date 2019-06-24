@@ -4,6 +4,7 @@
   padding: 2.5rem 0;
 
   .footer-navbar {
+    font-weight: 700;
     display: flex;
     justify-content: space-between;
 
@@ -20,6 +21,7 @@
     transition: .35s;
     margin: 0;
     flex-shrink: 0;
+
     &:hover {
       text-decoration: underline;
     }
@@ -38,11 +40,18 @@
 }
 
 @include respond-to($xs) {
+  .phone-link {
+    flex-shrink: 0;
+  }
+}
+
+@include respond-to($xs) {
   .footer {
     .footer-navbar {
       flex-direction: column;
       align-items: center;
     }
+
     .footer-nav {
       margin-bottom: 1.25rem;
     }

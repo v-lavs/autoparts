@@ -10,8 +10,6 @@
   z-index: 1000;
 
   .close-nav {
-    border: none;
-    background: none;
     display: none;
   }
 
@@ -25,6 +23,7 @@
     border: none;
     margin-left: 11px;
     transition: background .35s;
+
     &:hover {
       .line {
         background: $warning-color;
@@ -66,10 +65,12 @@
     align-items: center;
     width: 100%;
   }
+
   .logo {
     display: block;
     width: 12.875rem;
     height: 3.5rem;
+
     &__img {
       width: 100%;
       height: auto;
@@ -98,10 +99,12 @@
     .navbar {
       flex-direction: column;
     }
+
     .logo {
       width: 9.875rem;
       margin-bottom: 0.625rem;
     }
+
     .phone {
       font-size: 1.1rem;
       margin-right: 0;
