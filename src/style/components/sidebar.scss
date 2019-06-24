@@ -2,6 +2,8 @@
   border: 3px solid #ededed;
   padding: 1.875rem 2.5rem;
   height: 100%;
+  font-family: $secondary-font;
+  font-size: 0.875rem;
 
   .heading_default {
     color: #2e2e2e;
@@ -9,23 +11,27 @@
     line-height: 3;
     letter-spacing: normal;
   }
-
-  font-family: $secondary-font;
-  font-size: 0.875rem;
+  
+  hr {
+    display: block;
+    width: 100%;
+    border: none;
+    height: 1px;
+    background-color: #d5d5d5;
+    margin-top: 0;
+    margin-bottom: 0.9375rem;
+  }
 
   &__section {
-    padding: 0 0 0.9375rem;
-    margin-bottom: 0.9rem;
-
+    padding: 0 0 0.8375rem;
     &:last-child {
-      border-bottom: none;
       margin-bottom: 0;
       padding-bottom: 0;
     }
 
     .phone-link {
       display: inline-block;
-      margin-bottom: 1.875rem;
+      margin-bottom: 1rem;
     }
   }
 
@@ -34,19 +40,6 @@
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 0.9375rem;
-    padding-bottom: 0.9375rem;
-
-    &:after {
-      position: absolute;
-      content: '';
-      display: block;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      height: 2px;
-      background: #d5d5d5;
-      z-index: 2;
-    }
   }
 
   .sidebar__section {
