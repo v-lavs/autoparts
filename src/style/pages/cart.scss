@@ -6,68 +6,21 @@
   .heading_lg {
     margin-bottom: 2.25rem;
   }
+  &__sidebar {
+    .contact-form__group {
+      margin-bottom: 1rem;
+    }
+  }
+  .block-requisites {
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+  }
 }
 
 .catalog-table {
-
-  //font-family: $secondary-font;
-  //display: table;
-  //width: 100%;
-  //table-layout: fixed;
-  //font-size: 1rem;
-  //border: 1px solid #e1e1e1;
-  //&__header {
-  //  display: table-row;
-  //  font-size: 0.8125rem;
-  //  font-weight: 700;
-  //  text-transform: uppercase;
-  //  background-color: #f3f3f3;
-  //}
-  //&__row {
-  //  display: table-row;
-  //}
-  //&__cell {
-  //  display: table-cell;
-  //  padding: 0.75rem 0.625rem;
-  //  border-bottom: 1px solid #e1e1e1;
-  //  font-weight: 400;
-  //  &.type {
-  //    width: 54%;
-  //    padding-left: 1.5625rem;
-  //    padding-bottom: 2.5rem;
-  //  }
-  //  &.quantity {
-  //    width: 6.875rem;
-  //
-  //
-  //  }
-  //  &.cell-btn {
-  //    padding-right: 1.5625rem;
-  //
-  //  }
-  //}
-
   & + .bottom-block {
     border-top: none;
   }
-  //.type__text {
-  //  color: #888888;
-  //  margin-bottom: 0.625rem;
-  //  font-size: 1rem;
-  //}
-  //.price__text {
-  //  font-size: 1.25rem;
-  //  font-weight: 700;
-  //}
-  //.price {
-  //  width: 18%;
-  //}
-  //.quantity {
-  //  width: 11%;
-  //}
-  //.serial-number {
-  //  margin-bottom: 0.625rem;
-  //}
   .bottom-block{
     border: 1px solid #e1e1e1;
     padding: 20px 25px 30px;

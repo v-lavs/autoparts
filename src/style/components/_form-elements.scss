@@ -29,6 +29,10 @@
       color: $warning-color;
     }
   }
+  &_block {
+    display: block;
+    width: 100%;
+  }
 }
 
 .input {
