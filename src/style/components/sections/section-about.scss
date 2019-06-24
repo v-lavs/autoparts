@@ -16,9 +16,9 @@
   color: $primary-color;
 }
     .card {
-      border-top: 2px solid $warning-color;
-      border-left: 2px solid $warning-color;
-      border-right: 2px solid $warning-color;
+      border-top: 0.125rem solid $warning-color;
+      border-left: 0.125rem solid $warning-color;
+      border-right: 0.125rem solid $warning-color;
       transition: .35s;
 
       &:before,
@@ -36,14 +36,14 @@
 
   .card {
     padding: 2.1875rem 3.375rem;
-    border-top: 2px solid $light;
-    border-left: 2px solid $light;
-    border-right: 2px solid $light;
+    border-top: 0.125rem solid $light;
+    border-left: 0.125rem solid $light;
+    border-right: 0.125rem solid $light;
 
     &:before {
       content: '';
       position: absolute;
-      height: 2px;
+      height: 0.125rem;
       width: 20.5rem;
       background-color: $light;
       left: 0;
@@ -55,7 +55,7 @@
     &:after {
       content: '';
       position: absolute;
-      height: 2px;
+      height: 0.125rem;
       bottom: 0;
       z-index: 1;
       background-color: $light;
@@ -98,10 +98,10 @@
   .hide {
     position: absolute;
     width: 100%;
-    left: 3px;
+    left: 0.1875rem;
     right: 0;
     bottom: 0;
-    top: 3px;
+    top: 0.1875rem;
     opacity: 0;
     z-index: 2;
     display: block;
@@ -148,8 +148,8 @@
     padding-bottom: 0.75rem;
 
     .wrap-img {
-      max-width: 66px;
-      height: 50px;
+      max-width: 4.125rem;
+      height: 3.125rem;
     }
 
     .card {

@@ -1,7 +1,7 @@
 
 .number-input {
   position: relative;
-  width: 70px;
+  width: 4.375rem;
   display: flex;
   &__field {
     width: 100%;
@@ -14,13 +14,13 @@
   }
   &__control {
     position: absolute;
-    width: 20px;
+    width: 1.25rem;
     height: 50%;
     right: 0;
     left: auto;
     z-index: 1;
 
-    padding: 0 3px;
+    padding: 0 0.1875rem;
     line-height: 1;
     background-color: #fff;
     border: 1px solid #ddd;

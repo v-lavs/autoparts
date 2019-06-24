@@ -8,7 +8,7 @@
     top: 0;
     bottom: 0;
     right: 0;
-    max-width: 320px;
+    max-width: 20rem;
     width: 100%;
     z-index: 9999;
     background: $light-gray;
@@ -45,7 +45,7 @@
     text-transform: uppercase;
     color: $primary-color;
     font-weight: 700;
-    letter-spacing: 0.46px;
+    letter-spacing: 0.02875rem;
   }
 
   .close-nav {
