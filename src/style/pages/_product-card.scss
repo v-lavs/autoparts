@@ -9,6 +9,8 @@
   }
 
   .product-card {
+    border: 3px solid #ededed;
+    padding: 1.875rem 1.5rem;
     .product-card__link {
       &:first-of-type {
         margin-bottom: 0.9375rem;
