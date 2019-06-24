@@ -19,16 +19,18 @@
     right: 0;
     left: auto;
     z-index: 1;
-
     padding: 0 0.1875rem;
-    line-height: 1;
-    background-color: #fff;
+      background-color: #fff;
     border: 1px solid #ddd;
+    background-repeat: no-repeat;
+    background-position: center center;
     &_plus {
       top: 0;
       border-bottom: none;
+      background-image: url(../assets/img/v.png);
     }
     &_minus {
+      background-image: url(../assets/img/vn.png);
       bottom:0;
     }
   }
