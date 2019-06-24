@@ -11,7 +11,14 @@
     font-size: 1.125rem;
     font-weight: 700;
     .icon {
+      transition: fill .35s;
       margin-left: 0.9rem;
+    }
+    &:hover,
+    &:focus{
+      .icon {
+        fill: $warning-color;
+      }
     }
   }
 
