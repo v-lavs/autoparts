@@ -6,37 +6,40 @@
 }
 
 .catalog-table {
-
   font-family: $secondary-font;
   display: table;
   width: 100%;
   table-layout: fixed;
   font-size: 1rem;
-  border: 3px solid #ededed;
   &__header {
     display: table-row;
     font-size: 0.8125rem;
     font-weight: 700;
     text-transform: uppercase;
     background-color: #f3f3f3;
+    .catalog-table__cell {
+      padding-top: .75rem;
+      padding-bottom: .75rem;
+    }
+  }
+  &__body {
+    display: table-row-group;
+    border: 3px solid #ededed;
   }
   &__row {
     display: table-row;
   }
   &__cell {
     display: table-cell;
-    padding: 0.75rem 0.625rem;
+    padding: 1rem 0.625rem 1.5625rem;
     border-bottom: 1px solid #e1e1e1;
     font-weight: 400;
     &.type {
       width: 54%;
       padding-left: 1.5625rem;
-      padding-bottom: 1.5rem;
     }
     &.quantity {
       width: 6.875rem;
-
-
     }
     &.cell-btn {
       padding-right: 1.5625rem;
