@@ -155,14 +155,14 @@
                                 <div class="contact-form__group">
                                     <label for="inputName" class="d-block">
                                         <input type="text"
-                                               class="form-control input input_strocked"
+                                               class="form-control input input_strocked user"
                                                id="inputName" placeholder="ФИО получателя"
                                                required="">
                                     </label>
 
                                     <label for="inputEmail1" class="d-block">
                                         <input type="email"
-                                               class="form-control input input_strocked"
+                                               class="form-control input input_strocked mail-letter"
                                                id="inputEmail1"
                                                required=""
                                                placeholder="Контактный e-mail">
@@ -170,7 +170,7 @@
 
                                     <label for="inputPhone" class="d-block">
                                         <input type="tel"
-                                               class="form-control input input_strocked"
+                                               class="form-control input input_strocked contact-phone"
                                                id="inputPhone" required=""
                                                placeholder="Контактный телефон">
                                     </label>
@@ -194,21 +194,22 @@
                                 </div>
 
                                 <div class="text_center">
-                                    <label for="uploadDetails" class="label-upload"
+                                    <label for="uploadDetails" class="label-upload text_decoration"
                                            tabindex="0">загрузить реквизиты</label>
                                     <input type="file" name="photo" accept="image/jpeg"
                                            id="uploadDetails">
                                 </div>
 
                                 <div class="block-requisites">
-                                    <div class="text-center">
+                                    <div class="text_center">
                                         Прикрепите реквизиты организации
                                         для выставления счета
                                     </div>
-                                    <div class="text_center">
-                                        <a href="#">заполнить вручную</a>
-                                    </div>
                                 </div>
+                                <div class="text_center text_decoration text_primary">
+                                    <a href="#">заполнить вручную</a>
+                                </div>
+
                                 <button type="submit" class="btn btn_warn btn_block">
                                     отправить заявку
                                 </button>

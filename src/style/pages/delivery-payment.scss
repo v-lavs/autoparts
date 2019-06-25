@@ -16,30 +16,18 @@
     padding: 2.1875rem 2.125rem;
     line-height: 1.875rem;
     margin-bottom: 6rem;
-    border-bottom: 2px solid $light;
-    border-left: 2px solid $light;
-    border-right: 2px solid $light;
+    border-left: 0.125rem solid $light;
+    border-right: 0.125rem solid $light;
+    border-bottom: 0.125rem solid $light;
 
     &:last-child {
       margin-bottom: 7rem;
     }
-
-    &:before {
-      content: '';
-      position: absolute;
-      height: 2px;
-      width: 20.5rem;
-      background-color: $light;
-      left: 0;
-      top: 0;
-      z-index: 1;
-    }
-
     &:before,
     &:after {
       content: '';
       position: absolute;
-      height: 2px;
+      height: 0.125rem;
       top: 0;
       z-index: 1;
       background-color: $light;

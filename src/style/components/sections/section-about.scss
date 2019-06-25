@@ -9,12 +9,15 @@
     .wrap-img .hide {
       opacity: 1;
     }
+
     .heading {
       color: $primary-color;
     }
-.text_md {
-  color: $primary-color;
-}
+
+    .text_md {
+      color: $primary-color;
+    }
+
     .card {
       border-top: 0.125rem solid $warning-color;
       border-left: 0.125rem solid $warning-color;
@@ -61,10 +64,12 @@
       z-index: 1;
       background-color: $light;
     }
+
     &:before {
       width: 58%;
       left: 0;
     }
+
     &:after {
       width: 14%;
       right: 0;
@@ -85,6 +90,7 @@
     -webkit-transform: translateY(45%);
     transform: translateY(45%);
   }
+
   .img {
     position: absolute;
     bottom: 0;
@@ -116,12 +122,13 @@
 
 
 @include respond-to($md) {
-  .section-about{
+  .section-about {
     padding-bottom: 0.75rem;
     padding-top: 2.75rem;
   }
   .link {
     margin-bottom: 1.875rem;
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -138,6 +145,7 @@
   .section-about {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+
     .card {
       padding: 1.1875rem 2.375rem;
     }

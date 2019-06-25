@@ -25,6 +25,10 @@ html {
   color: $primary-color;
 }
 
+.text_decoration {
+  text-decoration: underline;
+}
+
 @include respond-to($xs) {
   .wrapper {
     padding-top: 8.8rem;

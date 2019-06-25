@@ -1,0 +1,46 @@
+
+.contact-form__group {
+  margin-bottom: 1rem;
+}
+
+.input_strocked {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 0 center;
+  background-size: 22px;
+  padding-left: 45px;
+
+
+  &.user {
+    background-image: url(../assets/img/icons/user.svg);
+  }
+
+  &.mail-letter {
+    background-image: url(../assets/img/icons/mail-envelope-closed.svg);
+  }
+
+  &.contact-phone {
+    background-image: url(../assets/img/icons/map.svg);
+  }
+}
+
+
+.block-requisites {
+  padding: 1rem 1.2rem;
+  margin-bottom: 0.625rem;
+  border: 0.1875rem dashed #ededed;
+}
+
+.label-upload {
+  display: inline-block;
+  color: #303c84;
+  margin-bottom: 0.625rem;
+  cursor: pointer;
+}
+input[type='file']{
+  display: none;
+}
+
+.btn_block {
+  margin-top: 1.625rem;
+}
