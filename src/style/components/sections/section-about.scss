@@ -116,12 +116,21 @@
 
 
 @include respond-to($md) {
+  .section-about{
+    padding-bottom: 0.75rem;
+    padding-top: 2.75rem;
+  }
   .link {
     margin-bottom: 1.875rem;
-
     &:last-child {
       margin-bottom: 0;
     }
+  }
+}
+
+@include respond-to($sm) {
+  .card {
+    margin-bottom: 2.3125rem;
   }
 }
 
