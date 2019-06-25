@@ -5,14 +5,15 @@
     margin-bottom: 1.875rem;
   }
 
-  .phone-link {
-    margin-bottom: 2rem;
-  }
-
   .product-link {
     &:hover,
     &:focus {
       text-decoration: underline;
+    }
+  }
+  &__sidebar {
+    .phone-link {
+      margin-bottom: 2rem;
     }
   }
 }
