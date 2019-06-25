@@ -25,10 +25,6 @@ html {
   color: $primary-color;
 }
 
-@include respond-to($md) {
-  padding-top: 6.9375rem;
-}
-
 @include respond-to($xs) {
   .wrapper {
     padding-top: 8.8rem;

@@ -35,6 +35,7 @@
   }
 
   .card {
+    position: relative;
     padding: 2.1875rem 3.375rem;
     border-top: 0.125rem solid $light;
     border-left: 0.125rem solid $light;
@@ -60,16 +61,13 @@
       z-index: 1;
       background-color: $light;
     }
-
     &:before {
       width: 58%;
-      left: 0.9375rem;
-
+      left: 0;
     }
-
     &:after {
       width: 14%;
-      right: 0.9375rem;
+      right: 0;
     }
   }
 
@@ -79,13 +77,20 @@
   }
 
   .wrap-img {
-    max-width: 6.25rem;
-    height: 6.25rem;
+    width: 18%;
+    padding-top: 18%;
     position: absolute;
-    right: 20%;
-    top: 45%;
+    right: 18.5%;
+    bottom: 0;
+    -webkit-transform: translateY(45%);
+    transform: translateY(45%);
   }
   .img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
     width: 100%;
     height: auto;
     display: block;
@@ -109,13 +114,6 @@
   }
 }
 
-@include respond-to($lg) {
-  .wrap-img {
-    max-width: 3.25rem;
-    top: 45%;
-  }
-}
-
 
 @include respond-to($md) {
   .link {
@@ -124,34 +122,13 @@
     &:last-child {
       margin-bottom: 0;
     }
-
-    .wrap-img {
-      max-width: 4.25rem;
-      top: 65%;
-    }
   }
 }
-
-@include respond-to($sm) {
-  .section-about {
-    .wrap-img {
-      max-width: 4.25rem;
-      top: 65%;
-    }
-  }
-}
-
 
 @include respond-to($xs) {
   .section-about {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
-
-    .wrap-img {
-      max-width: 4.125rem;
-      height: 3.125rem;
-    }
-
     .card {
       padding: 1.1875rem 2.375rem;
     }
