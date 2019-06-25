@@ -82,16 +82,10 @@
     padding-top: 1.25rem;
     padding-bottom: 2.5rem;
   }
-}
-
-@include respond-to($lg) {
-
-}
-
-@include respond-to($sm) {
-
-}
-
-@include respond-to($xs) {
-
+  .section-conditions{
+    .wrap-img{
+      width: 13%;
+      right: 9%;
+    }
+  }
 }
