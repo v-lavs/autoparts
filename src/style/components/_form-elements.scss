@@ -7,12 +7,10 @@
   display: inline-flex;
   text-transform: uppercase;
   padding: 0.5rem 1.75rem;
+  text-align: center;
   align-items: center;
   font-weight: 700;
   -webkit-transition: .35s;
-  -moz-transition: .35s;
-  -ms-transition: .35s;
-  -o-transition: .35s;
   transition: .35s;
   &_md {
     padding: 0.69rem 1.15rem;

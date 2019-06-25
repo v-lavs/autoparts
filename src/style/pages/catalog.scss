@@ -54,7 +54,7 @@
       left: 1.375rem;
       right: 1.375rem;
       bottom: 0;
-      width: 100%;
+      width: auto;
       height: 1px;
       background-color: #e1e1e1;
     }
@@ -79,6 +79,9 @@
 
     &.cell-btn {
       width: 6.875rem;
+      .btn {
+        display: block;
+      }
     }
   }
 
