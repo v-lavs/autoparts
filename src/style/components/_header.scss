@@ -24,13 +24,6 @@
     margin-left: 11px;
     transition: background .35s;
 
-    &:hover {
-      .line {
-        background: $warning-color;
-
-      }
-    }
-
     .line {
       display: block;
       width: 100%;

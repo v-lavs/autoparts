@@ -3,32 +3,6 @@
   display: flex;
   flex-grow: 1;
   padding: 0 2rem;
-  @media all and (max-width: 1190px) {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    max-width: 20rem;
-    width: 100%;
-    z-index: 9999;
-    background: $light-gray;
-    margin: 0;
-    padding: 40px;
-    text-align: right;
-    transform: translateX(100%);
-    transition: .7s ease;
-    &.open {
-      transform: translateX(0);
-
-      .main-nav__list {
-        display: block;
-      }
-      .close-nav {
-        display: block;
-      }
-    }
-  }
-
   &__list {
     display: flex;
     justify-content: space-between;
@@ -51,7 +25,7 @@
   .close-nav {
     position: absolute;
     top: 16px;
-    left: 15px;
+    right: 15px;
     display: block;
     width: 23px;
     height: 23px;
@@ -91,36 +65,76 @@
 }
 
 .decor {
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+  &:before {
+    left: 0;
+    width: 2rem;
+    height: 2px;
+  }
+  &:after {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    overflow: hidden;
+    right: 0;
+  }
   &:hover,
-  &:focus,
-  &_active {
-    &:before,
+  &:focus {
     &:after {
-      content: '';
-      position: absolute;
-      top: 50%;
       background-color: $warning-color;
-      transform: translateY(-50%);
-      z-index: 1;
     }
-
+  }
+  &_active {
+    &:after,
     &:before {
-      left: 0;
-      width: 2rem;
-      height: 2px;
-    }
-
-    &:after {
-      width: 4px;
-      height: 4px;
-      border-radius: 50%;
-      overflow: hidden;
-      right: 0;
+      background-color: $warning-color;
     }
   }
 }
 
-@include respond-to($sm){
+@media all and (max-width: 1199px) {
+  .main-nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 20rem;
+    width: 100%;
+    z-index: 9999;
+    background: $light-gray;
+    margin: 0;
+    padding: 4.5rem 1.5rem;
+    text-align: right;
+    transform: translateX(-100%);
+    transition: .7s ease;
+    &.open {
+      transform: translateX(0);
+    }
+    &__item {
+      padding-left: 1.5rem;
+    }
+    .decor:before {
+      width: 1rem;
+    }
+    .main-nav__list {
+      display: block;
+      text-align: left;
+    }
+    .close-nav {
+      display: block!important;
+    }
+  }
+}
+
+@include respond-to($sm) {
   .footer-nav__list {
     flex-direction: column;
   }
