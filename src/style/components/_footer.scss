@@ -2,32 +2,12 @@
 .footer {
   background: rgba(235, 235, 235, .4);
   padding: 2.5rem 0;
-
-  .footer-navbar {
-    font-weight: 700;
-    display: flex;
-    justify-content: space-between;
-
-    .main-nav {
-      display: block;
-    }
+  &-nav {
+    max-width: 800px;
   }
 
-  .phone {
-    flex-grow: 1;
-    text-align: right;
-    color: $primary-color;
+  &__navbar {
     font-weight: 700;
-    transition: .35s;
-    margin: 0;
-    flex-shrink: 0;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  .footer-navbar {
     display: flex;
     justify-content: space-between;
   }
@@ -47,7 +27,7 @@
 
 @include respond-to($xs) {
   .footer {
-    .footer-navbar {
+    .footer__navbar {
       flex-direction: column;
       align-items: center;
     }
