@@ -14,8 +14,6 @@
   }
 
   .burger {
-    position: absolute;
-    right: 0;
     display: none;
     width: 2.125rem;
     padding: 0.3125rem;
@@ -89,17 +87,13 @@
 
 @include respond-to($xs) {
   .header {
-    .navbar {
-      flex-direction: column;
-    }
-
     .logo {
-      width: 9.875rem;
-      margin-bottom: 0.625rem;
+      width: 6.875rem;
+      height: 1.5rem;
+      margin-right: 0.625rem;
     }
-
-    .phone {
-      font-size: 1.1rem;
+   .phone-link {
+      font-size: 1.2rem;
       margin-right: 0;
     }
   }

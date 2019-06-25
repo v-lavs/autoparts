@@ -64,3 +64,9 @@
     background-image: url(../assets/img/icons/chevron-thin-left.svg) !important;
   }
 }
+
+@include respond-to($md){
+  .owl-nav {
+    top: 18%;
+  }
+}

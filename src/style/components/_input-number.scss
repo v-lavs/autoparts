@@ -22,15 +22,16 @@
     padding: 0 0.1875rem;
       background-color: #fff;
     border: 1px solid #ddd;
+    background-size: 0.625rem;
     background-repeat: no-repeat;
     background-position: center center;
     &_plus {
       top: 0;
       border-bottom: none;
-      background-image: url(../assets/img/v.png);
+      background-image: url(../assets/img/icons/up-chevron.svg);
     }
     &_minus {
-      background-image: url(../assets/img/vn.png);
+      background-image: url(../assets/img/icons/down-chevron.svg);
       bottom:0;
     }
   }
