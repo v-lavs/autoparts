@@ -12,6 +12,7 @@
   font-weight: 700;
   -webkit-transition: .35s;
   transition: .35s;
+  font-family: $primary-fonts;
   &_md {
     padding: 0.69rem 1.15rem;
     font-size: 0.75rem;
@@ -39,14 +40,15 @@
   width: 100%;
   appearance: none;
   padding: 0.625rem 2rem 0.5rem;
+  font-family: $font-thin;
   font-size: 1.125rem;
-  font-family: $secondary-font;
   
   &_strocked{
     position: relative;
       border: none;
       border-bottom: 2px solid #d5d5d5;
       padding-left: 2.6875rem;
+    font-family: $secondary-font;
   }
 }
 

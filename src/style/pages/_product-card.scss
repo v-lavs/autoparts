@@ -2,10 +2,8 @@
   hr {
     margin-bottom: 1.5rem;
   }
-  .sidebar_section {
-    .sidebar__title:after {
-      display: none;
-    }
+  .heading_default {
+    margin-bottom: 1rem;
   }
 
   .product-card {
@@ -13,6 +11,7 @@
     padding: 1.875rem 1.5rem;
 
     .product-card__link {
+      font-family: $secondary-font;
       &:first-of-type {
         margin-bottom: 0.9375rem;
       }
@@ -21,6 +20,7 @@
     &__title {
       margin-bottom: 1.5625rem;
       letter-spacing: normal;
+      text-transform: none;
     }
 
     &__table {

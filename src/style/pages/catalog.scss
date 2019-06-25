@@ -10,8 +10,13 @@
     }
   }
   &__sidebar {
+    .heading_default {
+      font-family: $secondary-font;
+      margin-bottom: .5rem;
+    }
     .phone-link {
       margin-bottom: 2rem;
+      font-family: $primary-fonts;
     }
   }
 }
