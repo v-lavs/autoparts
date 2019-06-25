@@ -53,6 +53,7 @@
     right: 10%;
     top: 0;
     transform: translateY(-45%);
+
     img {
       position: absolute;
       top: 50%;
@@ -82,10 +83,28 @@
     padding-top: 1.25rem;
     padding-bottom: 2.5rem;
   }
-  .section-conditions{
-    .wrap-img{
+  .section-conditions {
+    .wrap-img {
       width: 13%;
       right: 9%;
+    }
+  }
+}
+
+@include respond-to($sm) {
+  .section-conditions {
+    .card {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+}
+
+
+@include respond-to($xs) {
+  .section-conditions {
+    .card .text_md {
+      font-size: 1rem;
     }
   }
 }
