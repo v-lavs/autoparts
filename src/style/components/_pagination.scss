@@ -3,7 +3,6 @@
   width: 100%;
   padding: 1.0625rem 2.5rem;
   border: 3px solid #ededed;
-  border-top-style: none;
 
   &__item {
     flex-grow: 1;
@@ -19,15 +18,24 @@
   }
 
   &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-width: 1.875rem;
-    text-align: center;
     font-size: 1rem;
     padding: 0.3125rem;
     line-height: 1;
-
-    &:hover {
+    &.dotes {
+      &:hover {
+        background-color: transparent;
+        color: inherit;
+      }
+    }
+    &:hover,
+    &_active {
       background: $primary-color;
       color: $light;
+      cursor: pointer;
     }
 
     &_nav {
@@ -55,5 +63,27 @@
     color: #757575;
     font-size: 1rem;
     margin: 0 0.9375rem;
+  }
+}
+
+@include respond-to($xs) {
+  .pagination {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    &__btn {
+      font-size: 12px;
+      min-width: 1.275rem;
+    }
+    &__item {
+      display: flex;
+      align-items: center;
+      height: 1.25rem;
+    }
+    .pagination__text {
+      display: none;
+    }
+    .pagination__item.text_right{
+      justify-content: flex-end;
+    }
   }
 }

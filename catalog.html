@@ -84,36 +84,7 @@
     <main>
         <div class="container">
             <h1 class="heading heading_lg text_center">Автозапчасти МАЗ</h1>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="sidebar page-catalog__sidebar">
-                        <section class="sidebar__section">
-                            <h4 class="heading heading_default">
-                                <small>Есть ли вопросы?</small>
-                            </h4>
-                            <p class="question__text">Ответим по телефону</p>
-                            <a href="tel:8(351)256-34-66" class="phone-link">8 (351) 256-34-66</a>
-                            <div>
-                                <select class="custom-select">
-                                    <option class="select-items">МАЗ</option>
-                                    <option class="select-items" value="КАМАЗ">КАМАЗ</option>
-                                </select>
-                            </div>
-                        </section>
-
-                        <section class="sidebar__section">
-                            <h4 class="sidebar__title">Каталог запчастей</h4>
-                            <hr>
-                            <ul>
-                                <li><a href="#">двигатель</a></li>
-                                <li><a href="#">трансмиссия</a></li>
-                                <li><a href="#">ходовая часть</a></li>
-                                <li><a href="#">тормозная система</a></li>
-                                <li><a href="#">детали кузова</a></li>
-                            </ul>
-                        </section>
-                    </div>
-                </div>
+            <div class="row flex-row-reverse">
                 <div class="col-lg-8">
                     <div class="catalog-table">
                         <div class="catalog-table__header">
@@ -216,31 +187,61 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="pagination">
-                        <div class="pagination__item">
+                        <div class="pagination">
+                            <div class="pagination__item">
                             <span class="pagination__btn pagination__btn_nav">
                                 <img src="assets/img/v.png" alt="arrow" class="img rotate-left">
                             </span>
-                            <span class="pagination__text">Пред.</span>
-                        </div>
-                        <div class="pagination__item pagination__scale">
-                            <a class="pagination__btn">1</a>
-                            <a class="pagination__btn">2</a>
-                            <a class="pagination__btn">3</a>
-                            <a class="pagination__btn">4</a>
-                            <a class="pagination__btn">5</a>
-                            <a class="pagination__btn">6</a>
-                            <a class="pagination__btn">7</a>
-                            <a class="pagination__btn">8</a>
-                        </div>
-                        <div class="pagination__item text_right">
-                            <span class="pagination__text">След.</span>
-                            <span class="pagination__btn pagination__btn_nav">
+                                <span class="pagination__text">Пред.</span>
+                            </div>
+                            <div class="pagination__item pagination__scale">
+                                <a class="pagination__btn">1</a>
+                                <a class="pagination__btn pagination__btn_active">2</a>
+                                <a class="pagination__btn">3</a>
+                                <a class="pagination__btn">4</a>
+                                <a class="pagination__btn">5</a>
+                                <a class="pagination__btn">6</a>
+                                <a class="pagination__btn">7</a>
+                                <span class="pagination__btn dotes">...</span>
+                                <a class="pagination__btn">20</a>
+                            </div>
+                            <div class="pagination__item text_right">
+                                <span class="pagination__text">След.</span>
+                                <span class="pagination__btn pagination__btn_nav">
                                 <img src="assets/img/v.png" alt="arrow" class="img rotate-right">
                             </span>
+                            </div>
                         </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4">
+                    <div class="sidebar page-catalog__sidebar">
+                        <section class="sidebar__section">
+                            <h4 class="heading heading_default">
+                                <small>Есть ли вопросы?</small>
+                            </h4>
+                            <p class="question__text">Ответим по телефону</p>
+                            <a href="tel:8(351)256-34-66" class="phone-link">8 (351) 256-34-66</a>
+                            <div>
+                                <select class="custom-select">
+                                    <option class="select-items">МАЗ</option>
+                                    <option class="select-items" value="КАМАЗ">КАМАЗ</option>
+                                </select>
+                            </div>
+                        </section>
+
+                        <section class="sidebar__section">
+                            <h4 class="sidebar__title">Каталог запчастей</h4>
+                            <hr>
+                            <ul>
+                                <li><a href="#">двигатель</a></li>
+                                <li><a href="#">трансмиссия</a></li>
+                                <li><a href="#">ходовая часть</a></li>
+                                <li><a href="#">тормозная система</a></li>
+                                <li><a href="#">детали кузова</a></li>
+                            </ul>
+                        </section>
                     </div>
                 </div>
             </div>
