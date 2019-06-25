@@ -14,7 +14,7 @@
       display: block;
     }
   }
-  
+
   hr {
     display: block;
     width: 100%;
@@ -26,7 +26,7 @@
   }
 
   &__link {
-    &:hover{
+    &:hover {
       text-decoration: underline;
     }
   }
@@ -43,16 +43,6 @@
       font-family: $primary-fonts;
       margin-bottom: 1rem;
     }
-  }
-
-  &__title {
-    position: relative;
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-bottom: 0.9375rem;
-  }
-
-  .sidebar__section {
     li {
       line-height: 1.25;
       font-size: 1rem;
@@ -67,50 +57,13 @@
     .unorder-list__item {
       padding-left: 2rem;
     }
+  }
 
-    .custom-select {
-      position: relative;
-      width: 100%;
-      max-width: 400px;
-      display: block;
-      font-size: 1rem;
-      padding: .8rem 3rem .5rem 1.6rem;
-      margin: 0;
-      -moz-appearance: none;
-      -webkit-appearance: none;
-      appearance: none;
-      background-image: url('../assets/img/vn.png');
-      background-repeat: no-repeat;
-      background-position: right 1.2rem top 50%;
-      background-size: .65rem auto, 100%;
-      border: 1px solid #dcdcdc;
-      overflow: hidden;
-      margin-bottom: 0.875rem;
-
-      &:after {
-        position: absolute;
-        content: '';
-        display: block;
-        background: #dcdcdc;
-        width: 100%;
-        height: 1.875rem;
-        top: 0;
-        bottom: 0;
-        z-index: 2;
-      }
-    }
-
-    .custom-select::-ms-expand {
-      display: none;
-    }
-
-    .select-items {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      z-index: 99;
-    }
+  &__title {
+    position: relative;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.9375rem;
   }
 
   .question__text {
@@ -121,6 +74,10 @@
 
   .checkbox-wrap {
     margin: 0 0 0.75rem;
+  }
+
+  .custom-select-wrap {
+    margin-bottom: 0.875rem;
   }
 }
 
