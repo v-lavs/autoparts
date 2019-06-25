@@ -9,6 +9,11 @@
     min-height: 1px;
     width: 1.9375rem;
     height: 2rem;
+    &:hover {
+      .pagination__text {
+        color: $dark;
+      }
+    }
   }
 
   &__scale {
@@ -25,12 +30,14 @@
     font-size: 1rem;
     padding: 0.3125rem;
     line-height: 1;
+
     &.dotes {
       &:hover {
         background-color: transparent;
         color: inherit;
       }
     }
+
     &:hover,
     &_active {
       background: $primary-color;
@@ -39,23 +46,20 @@
     }
 
     &_nav {
+      position: relative;
+      width: 30px;
+      height: 32px;
       background: $light;
       display: inline-block;
       padding: 0.5rem;
     }
 
-  }
-
-  .img {
-    width: 100%;
-  }
-
-  .rotate-right {
-    transform: rotate(90deg);
-  }
-
-  .rotate-left {
-    transform: rotate(-90deg);
+    .icon-svg {
+      position: absolute;
+      bottom: 50%;
+      right: 50%;
+      transform: translate(50%, 50%);
+    }
   }
 
   .pagination__text {
@@ -70,19 +74,23 @@
   .pagination {
     padding-left: 1rem;
     padding-right: 1rem;
+
     &__btn {
       font-size: 12px;
       min-width: 1.275rem;
     }
+
     &__item {
       display: flex;
       align-items: center;
       height: 1.25rem;
     }
+
     .pagination__text {
       display: none;
     }
-    .pagination__item.text_right{
+
+    .pagination__item.text_right {
       justify-content: flex-end;
     }
   }

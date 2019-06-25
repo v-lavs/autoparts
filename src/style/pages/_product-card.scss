@@ -2,6 +2,7 @@
   hr {
     margin-bottom: 1.5rem;
   }
+
   .sidebar_section {
     .sidebar__title:after {
       display: none;
@@ -11,6 +12,7 @@
   .product-card {
     border: 3px solid #ededed;
     padding: 1.875rem 1.5rem;
+
     .product-card__link {
       &:first-of-type {
         margin-bottom: 0.9375rem;
@@ -53,3 +55,22 @@
     }
   }
 }
+
+@include respond-to($xs) {
+
+  .btn_md {
+    width: 5rem;
+      overflow: hidden;
+      text-indent: -999rem;
+      padding-left: .05rem;
+      padding-right: .05rem;
+      background-image: url(../assets/img/icons/shopping-cart.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      -webkit-background-size: auto 20px;
+      background-size: auto 20px;
+      font-size: inherit;
+      line-height: 1;
+    }
+}
+
