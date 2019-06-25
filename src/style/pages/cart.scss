@@ -1,27 +1,52 @@
 .page-cart {
   font-family: $secondary-font;
+
+  &__sidebar {
+    padding-top: .5rem;
+
+    .input {
+      margin-bottom: .5rem;
+    }
+  }
+
+  .sidebar__header {
+    background-color: #f3f3f3;
+    padding: 10px;
+    text-align: center;
+
+    .heading {
+      font-size: 13px;
+      line-height: 1.5;
+      font-weight: normal;
+    }
+  }
+
   .section-cart {
     padding: 6.25rem 0;
   }
+
   .heading_lg {
     margin-bottom: 2.25rem;
   }
+
   .catalog-table {
     &__body {
       border-bottom: none;
     }
+
     &__footer {
       display: block;
       border: 3px solid $light;
       border-top: none;
       padding: 0.75rem 1.375rem 1.2rem;
+
       .total,
       .cost {
         font-size: 1.25rem;
         font-weight: 700;
       }
-
     }
+
     &__row {
       &:last-child {
         &:after {
@@ -29,10 +54,12 @@
         }
       }
     }
-    .total{
+
+    .total {
       color: $dark;
     }
-    .cost{
+
+    .cost {
       color: $primary-color;
     }
   }
