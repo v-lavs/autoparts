@@ -22,6 +22,15 @@
       margin-left: 1.8rem;
       padding: 0;
     }
+    .decor{
+      &:after {
+        right: -10px;
+      }
+      &:before {
+        width: 1.15rem;
+        left: -1.6rem;
+      }
+    }
   }
 }
 
@@ -62,6 +71,14 @@
       &__item {
         margin: 0 0 10px;
       }
+    }
+  }
+  .decor{
+    &:after {
+      right: 0;
+    }
+    &:before {
+      left: 0;
     }
   }
 }
