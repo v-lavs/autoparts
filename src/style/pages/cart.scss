@@ -127,12 +127,12 @@
   &__row {
     &:last-child {
       &:after {
-        display: block;
+        display: block!important;
       }
     }
   }
   .total{
-    color: #2e2e2e;
+    color: $dark;
   }
   .cost{
     color: $primary-color;
