@@ -154,4 +154,10 @@
     }
   }
 }
-
+@media all and (max-width: 540px) {
+  .section-about {
+    .card {
+      padding-bottom: 2.1rem;
+    }
+  }
+}
