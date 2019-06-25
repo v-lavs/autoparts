@@ -6,8 +6,8 @@
   color: #fff;
 
   .btn_search {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
     font-size: 1.125rem;
     font-weight: 700;
     .icon {
@@ -19,6 +19,19 @@
       .icon {
         fill: $warning-color;
       }
+    }
+  }
+
+  @include respond-to($lg) {
+    .heading {
+      font-size: 1.125rem;
+    }
+  }
+
+  @include respond-to($md) {
+    .heading {
+      text-align: center;
+      margin-bottom: 15px;
     }
   }
 

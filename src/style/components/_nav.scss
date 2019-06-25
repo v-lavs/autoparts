@@ -133,12 +133,3 @@
     }
   }
 }
-
-@include respond-to($sm) {
-  .footer-nav__list {
-    flex-direction: column;
-  }
-  .footer-nav__item {
-    text-align: right;
-  }
-}

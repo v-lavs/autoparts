@@ -80,8 +80,10 @@
   .navbar {
     justify-content: space-between;
   }
-  .phone {
-    margin-right: 1.875rem;
+  .header {
+    .phone-link {
+      margin-left: auto;
+    }
   }
 }
 
@@ -93,7 +95,7 @@
       margin-right: 0.625rem;
     }
    .phone-link {
-      font-size: 1.2rem;
+      font-size: 0.875rem;
       margin-right: 0;
     }
   }
