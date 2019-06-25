@@ -18,3 +18,9 @@
     }
   }
 }
+
+@include respond-to($md){
+  .unorder-list__item {
+    padding-left: 2.125rem;
+  }
+}

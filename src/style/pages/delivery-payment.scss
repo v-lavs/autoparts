@@ -35,7 +35,7 @@
     }
 
     &:before {
-      width: 80%;
+      width: 76%;
       left: 0;
 
     }
@@ -47,39 +47,22 @@
   }
 
   .wrap-img {
-    width: 18%;
-    padding-top: 18%;
+    width: 8%;
+    padding-top: 8%;
     position: absolute;
-    right: 18.5%;
-    bottom: 0;
-    -webkit-transform: translateY(45%);
-    transform: translateY(45%);
+    right: 10%;
+    top: 0;
+    transform: translateY(-45%);
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: auto;
+      display: block;
+      transform: translate(-50%, -50%);
+    }
   }
-
-  .img {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  //.wrap-img {
-  //  max-width: 5.375rem;
-  //  height: 2.5rem;
-  //  position: absolute;
-  //  right: 9%;
-  //  top: -7%;
-  //
-  //  img {
-  //    width: 100%;
-  //    height: auto;
-  //    display: block;
-  //  }
-  //}
 
   .opportunities {
     color: $dirty;
