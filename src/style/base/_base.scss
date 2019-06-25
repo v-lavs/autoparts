@@ -10,6 +10,13 @@ html {
   fill: $primary-color;
 }
 
+img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .bg_bottom {
   background-size: cover;
   background-position: center center;
@@ -27,12 +34,6 @@ html {
 
 .text_decoration {
   text-decoration: underline;
-}
-
-@include respond-to($xs) {
-  .wrapper {
-    padding-top: 3.8rem;
-  }
 }
 
 .link {
@@ -63,14 +64,9 @@ html {
   }
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+@include respond-to($xs) {
+  .wrapper {
+    padding-top: 3.8rem;
+  }
 }
 

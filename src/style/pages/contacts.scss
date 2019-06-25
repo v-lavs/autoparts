@@ -36,7 +36,6 @@
     border-bottom: 2px solid $light;
     border-right: 2px solid $light;
     color: $primary-color;
-
     &:before,
     &:after {
       content: '';
@@ -63,14 +62,14 @@
 
   .text_contacts {
     position: relative;
-    margin-bottom: 0.75rem;
-
+    margin-bottom: 0.875rem;
+    line-height: 1.25;
     &:before {
       position: absolute;
       content: '';
-      width: 2.5rem;
-      height: 2.5rem;
-      background-size: cover;
+      width: 2.35rem;
+      height: 2.35rem;
+      background-size: 100%;
       background-position: center center;
       background-repeat: no-repeat;
       display: inline-block;
@@ -79,38 +78,33 @@
     }
 
     &.map:before {
-      width: 2rem;
-      height: 2rem;
       background-image: url(../assets/img/icons/map2.svg);
     }
 
-
     &.mail:before {
       left: -4.2rem;
-      bottom: -0.5rem;
-      background-image: url(../assets/img/icons/mail.svg);
+      bottom: -5px;
+      background-image: url(../assets/img/icons/envelope.svg);
     }
 
     &.fly:before {
-      width: 2.125rem;
-      height: 2.125rem;
       background-image: url(../assets/img/icons/paperplane.svg);
     }
 
     &.mobile:before {
       width: 1.75rem;
-      height: 2.65rem;
+      height: 2.9rem;
       left: -4.125rem;
       bottom: -1.875rem;
-      background-image: url(../assets/img/icons/mobile.svg);
+      background-image: url(../assets/img/icons/phone.svg);
     }
 
     &.clock:before {
-      bottom: -0.5rem;
-      background-image: url(../assets/img/icons/time.svg);
+      left: -4.1rem;
+      bottom: -3px;
+      background-image: url(../assets/img/icons/clock.svg);
     }
   }
-
 }
 
 .section-location {
@@ -162,6 +156,12 @@
 }
 
 @include respond-to($sm) {
+  .contact-list__item {
+      width: 90%;
+      .card-contact {
+        padding-right: 2rem;
+      }
+  }
   .section-contacts {
     padding-top: 0.125rem;
     padding-bottom: 1.75rem;
