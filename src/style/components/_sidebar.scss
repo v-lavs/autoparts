@@ -25,6 +25,12 @@
     margin-bottom: 0.9375rem;
   }
 
+  &__link {
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
   &__section {
     padding: 0 0 0.8375rem;
     &:last-child {
