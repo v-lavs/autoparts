@@ -16,13 +16,14 @@
     padding: 2.1875rem 2.125rem;
     line-height: 1.875rem;
     margin-bottom: 6rem;
+    border-bottom: 0.125rem solid $light;
     border-left: 0.125rem solid $light;
     border-right: 0.125rem solid $light;
-    border-bottom: 0.125rem solid $light;
 
     &:last-child {
       margin-bottom: 7rem;
     }
+
     &:before,
     &:after {
       content: '';
@@ -46,18 +47,39 @@
   }
 
   .wrap-img {
-    max-width: 5.375rem;
-    height: 2.5rem;
+    width: 18%;
+    padding-top: 18%;
     position: absolute;
-    right: 9%;
-    top: -7%;
-
-    img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+    right: 18.5%;
+    bottom: 0;
+    -webkit-transform: translateY(45%);
+    transform: translateY(45%);
   }
+
+  .img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  //.wrap-img {
+  //  max-width: 5.375rem;
+  //  height: 2.5rem;
+  //  position: absolute;
+  //  right: 9%;
+  //  top: -7%;
+  //
+  //  img {
+  //    width: 100%;
+  //    height: auto;
+  //    display: block;
+  //  }
+  //}
 
   .opportunities {
     color: $dirty;
