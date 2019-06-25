@@ -8,8 +8,11 @@
   .heading_default {
     color: #2e2e2e;
     font-weight: 400;
-    line-height: 3;
+    line-height: 1.5;
     letter-spacing: normal;
+    small {
+      display: block;
+    }
   }
   
   hr {
@@ -114,10 +117,9 @@
   }
 }
 
-.product-page {
-  .sidebar_section {
-    .sidebar__title:after {
-      display: none;
-    }
+@include respond-to($sm) {
+  .sidebar {
+    padding: 1.875rem;
   }
 }
+

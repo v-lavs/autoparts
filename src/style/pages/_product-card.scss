@@ -56,10 +56,17 @@
   }
 }
 
-@include respond-to($xs) {
+@include respond-to($md) {
+  .product-page {
+    .sidebar {
+      margin-top: 2rem;
+    }
+  }
+}
 
-  .btn_md {
-    width: 5rem;
+@include respond-to($xs) {
+  .product-card {
+    .btn_cart {
       overflow: hidden;
       text-indent: -999rem;
       padding-left: .05rem;
@@ -72,5 +79,6 @@
       font-size: inherit;
       line-height: 1;
     }
+  }
 }
 
