@@ -5,6 +5,8 @@
   border: 3px solid #ededed;
 
   &__item {
+    display: flex;
+    align-items: center;
     flex-grow: 1;
     min-height: 1px;
     width: 1.9375rem;
@@ -17,7 +19,7 @@
   }
 
   &__scale {
-    flex-grow: 2;
+    flex-grow: 8;
     display: flex;
     justify-content: center;
   }
