@@ -48,10 +48,63 @@
       }
     }
 
+    &__remove-btn {
+      position: relative;
+      border: none;
+      background-color: #ff2e33;
+      transform: scaleX(0);
+      transform-origin: 100% 50%;
+      transition: .4s;
+      width: 40px;
+      height: 41px;
+      margin-right: -40px;
+      opacity: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        display: block;
+      }
+    }
+
+    .cell-btn {
+      flex-shrink: 0;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      overflow: hidden;
+
+      .btn {
+        width: 100%;
+        overflow: hidden;
+        transition: .4s width, background-color .35s;
+      }
+    }
+
     &__row {
       &:last-child {
         &:after {
           display: block;
+        }
+      }
+
+      &:hover {
+        .btn {
+          color: transparent;
+          width: 3.06rem !important;
+          background-image: url(../assets/img/icons/shopping-cart.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          -webkit-background-size: auto 20px;
+          background-size: auto 20px;
+        }
+
+        .catalog-table__remove-btn {
+          transform: scale(1, 1);
+          margin-right: 0;
+          margin-left: 10px;
+          opacity: 1;
         }
       }
     }
@@ -66,4 +119,33 @@
   }
 }
 
+@include respond-to($lg) {
+  .page-cart {
+    .catalog-table__remove-btn {
+      opacity: 1 !important;
+      transform: scaleX(1) !important;
+      margin-right: 0;
+      margin-left: 10px;
+    }
 
+    .cell-btn {
+      .btn {
+        color: transparent;
+        width: 3.06rem !important;
+        background-image: url(../assets/img/icons/shopping-cart.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        -webkit-background-size: auto 20px;
+        background-size: auto 20px;
+      }
+    }
+  }
+}
+
+@include respond-to($xs) {
+  .page-cart {
+    .catalog-table__remove-btn {
+      height: 37px;
+    }
+  }
+}
