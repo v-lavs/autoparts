@@ -81,7 +81,7 @@
     <main>
         <div class="container">
             <h1 class="heading heading_lg text_center">Автозапчасти МАЗ</h1>
-            <div class="row flex-row-reverse">
+            <div class="row flex-row-reverse" id="sticky-parent">
                 <div class="col-lg-8">
                     <div class="catalog-table">
                         <div class="catalog-table__header">
@@ -296,10 +296,9 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="col-lg-4">
-                    <div class="sidebar page-catalog__sidebar">
+                    <aside id="sidebar" class="sidebar page-catalog__sidebar">
                         <section class="sidebar__section">
                             <h4 class="heading heading_default">
                                 <small>Есть ли вопросы?</small>
@@ -325,7 +324,7 @@
                                 <li><a class="sidebar__link" href="#">детали кузова</a></li>
                             </ul>
                         </section>
-                    </div>
+                    </aside>
                 </div>
             </div>
         </div>

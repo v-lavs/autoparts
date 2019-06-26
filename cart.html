@@ -57,10 +57,8 @@
         <section class="section-cart">
             <div class="container">
                 <h1 class="heading heading_lg text_center">ваш заказ</h1>
-                <div class="row">
-
+                <div class="row" id="sticky-parent">
                     <div class="col-lg-8">
-
                         <div class="catalog-table">
                             <div class="catalog-table__header">
                                 <div class="catalog-table__cell type">Марка</div>
@@ -208,76 +206,78 @@
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="sidebar__header">
-                            <h4 class="heading">оформить заявку</h4>
-                        </div>
-                        <div class="sidebar page-cart__sidebar">
-                            <form action="/" method="post" enctype="multipart/form-data"
-                                  id="contactForm"
-                                  class="contact-form">
-                                <div class="contact-form__group">
-                                    <label for="inputName" class="d-block">
-                                        <input type="text"
-                                               class="form-control input input_strocked user"
-                                               id="inputName" placeholder="ФИО получателя"
-                                               required="">
-                                    </label>
+                        <aside id="sidebar">
+                            <div class="sidebar__header">
+                                <h4 class="heading">оформить заявку</h4>
+                            </div>
+                            <div class="sidebar page-cart__sidebar">
+                                <form action="/" method="post" enctype="multipart/form-data"
+                                      id="contactForm"
+                                      class="contact-form">
+                                    <div class="contact-form__group">
+                                        <label for="inputName" class="d-block">
+                                            <input type="text"
+                                                   class="form-control input input_strocked user"
+                                                   id="inputName" placeholder="ФИО получателя"
+                                                   required="">
+                                        </label>
 
-                                    <label for="inputEmail1" class="d-block">
-                                        <input type="email"
-                                               class="form-control input input_strocked mail-letter"
-                                               id="inputEmail1"
-                                               required=""
-                                               placeholder="Контактный e-mail">
-                                    </label>
+                                        <label for="inputEmail1" class="d-block">
+                                            <input type="email"
+                                                   class="form-control input input_strocked mail-letter"
+                                                   id="inputEmail1"
+                                                   required=""
+                                                   placeholder="Контактный e-mail">
+                                        </label>
 
-                                    <label for="inputPhone" class="d-block">
-                                        <input type="tel"
-                                               class="form-control input input_strocked contact-phone"
-                                               id="inputPhone" required=""
-                                               placeholder="Контактный телефон">
-                                    </label>
-                                </div>
-
-                                <div class="checkbox-wrap">
-                                    <input type="checkbox" name="orderIndividual"
-                                           id="individual"
-                                           class="form-check-input form-control"
-                                           value="individual">
-                                    <label for="individual">я заказываю как физическео
-                                        лицо</label>
-                                </div>
-
-                                <div class="checkbox-wrap">
-                                    <input type="checkbox" name="insurance" id="entity"
-                                           class="form-check-input form-control"
-                                           value="entity">
-                                    <label for="entity">я заказываю как юридическое
-                                        лицо</label>
-                                </div>
-
-                                <div class="text_center">
-                                    <label for="uploadDetails" class="label-upload text_decoration"
-                                           tabindex="0">загрузить реквизиты</label>
-                                    <input type="file" name="photo" accept="image/jpeg"
-                                           id="uploadDetails">
-                                </div>
-
-                                <div class="block-requisites">
-                                    <div class="text_center">
-                                        Прикрепите реквизиты организации
-                                        для выставления счета
+                                        <label for="inputPhone" class="d-block">
+                                            <input type="tel"
+                                                   class="form-control input input_strocked contact-phone"
+                                                   id="inputPhone" required=""
+                                                   placeholder="Контактный телефон">
+                                        </label>
                                     </div>
-                                </div>
-                                <div class="text_center text_decoration text_primary">
-                                    <a href="#">заполнить вручную</a>
-                                </div>
 
-                                <button type="submit" class="btn btn_warn btn_block">
-                                    отправить заявку
-                                </button>
-                            </form>
-                        </div>
+                                    <div class="checkbox-wrap">
+                                        <input type="checkbox" name="orderIndividual"
+                                               id="individual"
+                                               class="form-check-input form-control"
+                                               value="individual">
+                                        <label for="individual">я заказываю как физическео
+                                            лицо</label>
+                                    </div>
+
+                                    <div class="checkbox-wrap">
+                                        <input type="checkbox" name="insurance" id="entity"
+                                               class="form-check-input form-control"
+                                               value="entity">
+                                        <label for="entity">я заказываю как юридическое
+                                            лицо</label>
+                                    </div>
+
+                                    <div class="text_center">
+                                        <label for="uploadDetails" class="label-upload text_decoration"
+                                               tabindex="0">загрузить реквизиты</label>
+                                        <input type="file" name="photo" accept="image/jpeg"
+                                               id="uploadDetails">
+                                    </div>
+
+                                    <div class="block-requisites">
+                                        <div class="text_center">
+                                            Прикрепите реквизиты организации
+                                            для выставления счета
+                                        </div>
+                                    </div>
+                                    <div class="text_center text_decoration text_primary">
+                                        <a href="#">заполнить вручную</a>
+                                    </div>
+
+                                    <button type="submit" class="btn btn_warn btn_block">
+                                        отправить заявку
+                                    </button>
+                                </form>
+                            </div>
+                        </aside>
                     </div>
                 </div>
             </div>

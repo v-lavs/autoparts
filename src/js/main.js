@@ -4,6 +4,7 @@
 
 //= include ../lib/jquery-3.3.1.min.js
 //= include ../lib/owl-slider/js/build.js
+//= include ../lib/jquery.sticky-kit.js
 
 /**
  * CUSTOM SCRIPTS
@@ -112,4 +113,16 @@ $(document).ready(function () {
             input.val(--inputValue);
         }
     });
+
+    /*
+     * STICKY SIDEBAR
+     */
+
+    if( ($('#sidebar').length > 0) && ($('#sticky-parent').length > 0) ) {
+        $("#sidebar").stick_in_parent({
+            parent: $('#sticky-parent'),
+            offset_top: $('.header').outerHeight()
+        });
+    }
+
 });
